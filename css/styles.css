@@ -1,0 +1,182 @@
+:root {
+  --title-text-color: #212121;
+  --primery-text-color: #757575;
+  --acent-color: #2196f3;
+  --acent-white-color: #f5f5f5;
+  --secodary-button-color: #f5f4fa;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/*<span class="letter">HTML</span>*/
+
+.list {
+  list-style: none;
+}
+
+/* основний колір сторінки: background: #F5F5F5;*/
+/* загаловки: color: #212121;*/
+/* основний тексту: color: #757575;*/
+/* колір посилань знизу: color: rgba(255, 255, 255, 0.6);*/
+/* колір посилань зверху: color: #2196F3; */
+
+/* логотип */
+.web-logo {
+  color: var(--acent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+.studio-logo {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+.studio-logos {
+  color: var(--acent-white-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+/* site-nav */
+.site-nav .link {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link.current {
+  color: var(--acent-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--acent-color);
+}
+
+/* auth-nav*/
+.auth-nav .link {
+  color: var(--primery-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.auth-nav .link:hover,
+.auth-nav:focus {
+  color: var(--acent-color);
+}
+
+/* герой (hover, focus ен працює)*/
+.hero {
+  background-color: var(--title-text-color);
+}
+
+.hero-titel {
+  color: var(--acent-white-color);
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.button.primery {
+  background: var(--acent-color);
+  color: var(--acent-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  cursor: pointer;
+}
+
+.button.secondary {
+  background: var(--secodary-button-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  cursor: pointer;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--acent-color);
+}
+
+/*заголовки секцій*/
+.section-tit {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.14;
+  text-align: uppercase;
+}
+.section-text {
+  color: var(--primery-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.section-titel {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.comand-titel {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.comand-text {
+  color: var(--primery-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/*футер*/
+.footer {
+  background-color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: 400;
+}
+.footer .footer-address {
+  color: var(--acent-white-color);
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.footer .footer-address:hover,
+.footer .footer-address:focus {
+  color: var(--acent-color);
+}
+
+.footer .footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.footer .footer-contact:hover,
+.footer .footer-contact:focus {
+  color: var(--acent-color);
+}
