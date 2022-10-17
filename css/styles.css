@@ -14,16 +14,27 @@
 }
 
 /*<span class="letter">HTML</span>*/
-
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 .list {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-
 .link {
   text-decoration: none;
   color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -76,6 +87,9 @@ body {
 /*розміщення хедер*/
 .page-header .conteiner {
   display: flex;
+  align-items: center;
+}
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -111,13 +125,13 @@ body {
 /* розміщення навігації */
 .conteiner .site-nav {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
   margin-right: auto;
 }
 
 .site-nav .navigation {
   margin-right: 50px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .site-nav .navigation :last-child {
@@ -140,12 +154,14 @@ body {
 /* розміщення контактів */
 .conteiner .auth-nav {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  margin-left: auto;
 }
 
 .auth-nav .contact {
   margin-right: 50px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
 }
 
 .auth-nav .contact :last-child {
@@ -174,7 +190,10 @@ body {
   cursor: pointer;
   border-radius: 4px;
   border: none;
+  padding: 10px 32px;
 }
+
+/*Кнопки портфоліо*/
 
 .button.secondary {
   background: var(--secodary-button-color);
@@ -202,22 +221,23 @@ body {
   text-align: center;
   min-width: 216px;
   display: inline-block;
-  padding: 10px 32px;
+  margin-top: 30px;
 }
 
-.button .secondary {
-  text-align: center;
-  min-width: 73px;
-  display: inline-block;
-  padding: 6px 22px;
-}
-
-.conteiner-button:first-child {
+.wight-button:first-child {
   margin-left: 297px;
 }
 
-.list .wight-button {
-  display: inline-block;
+.button-roster {
+  display: inline-flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 0px;
+  padding: 6px 22px;
+}
+
+.wight-button {
+  display: inline-flex;
   margin: 0px;
   padding: 0px;
   margin: 0px;
@@ -225,12 +245,16 @@ body {
   margin-right: 8px;
 }
 
+.button .secondary {
+  text-align: center;
+  min-width: 73px;
+}
+
 /*герой на чорному фоні*/
 
-.hero .conteiner {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
 }
 
 .hero-titel {
@@ -254,50 +278,48 @@ body {
 }
 
 /*Переваги. розміщення*/
-.conteiner .file {
+
+.advantage .conteiner {
   display: flex;
-  margin: 0px;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.file .element {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
-  row-gap: 30px;
-}
-
-.element {
-  flex-basis: calc(100% / 4 - 30);
-}
-
-.file .element :first-child {
+.advantages-list .item :first-child {
   margin-left: 15px;
 }
 
-.file .element :nth-child(n + 4) {
+.advantages-list .item :nth-child(n + 4) {
   margin-right: 0px;
 }
 
-/*Чим ми займаємося. розміщення*/
-.list .card {
+.advantages-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
+  gap: 30px;
 }
 
-.list {
-  flex-basis: calc(100% / 3 - 30);
+.advantages-list-item {
+  flex-basis: calc((100% - 90px) / 4);
+  justify-content: center;
+}
+
+/*Чим ми займаємося. розміщення*/
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  gap: 30px;
+}
+
+.card-list-list {
+  flex-basis: calc((100% - 90px) / 3);
   justify-content: space-around;
-}
-
-.section {
-  padding-bottom: 0px;
 }
 
 /*Секція команда розміщення*/
 .comand {
-  padding-top: 94px;
+  padding-bottom: 94px;
   padding-top: 94px;
   margin: 0;
 }
@@ -310,7 +332,7 @@ body {
 }
 
 .alist {
-  flex-basis: calc(100% / 4 - 30);
+  flex-basis: calc((100% 90) / 4);
   justify-content: space-around;
 }
 
@@ -318,6 +340,10 @@ body {
   text-align: center;
   width: 270px;
   height: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .img {
@@ -340,22 +366,30 @@ body {
   margin: 0;
 }
 
+.person {
+  background: var(--primery-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 /*Портфоліо, наші роботи, розміщення*/
 
-.conteiner .list {
+.example-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
   margin-top: 56px;
+  gap: 30px;
 }
 
 .work-content {
   background: #ffffff;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .work-content {
-  flex-basis: calc(100% / 3 - 30);
+  flex-basis: calc((100% - 60px) / 3);
   margin-bottom: 20px;
   margin-top: 0px;
 }
@@ -402,7 +436,6 @@ body {
   font-size: 16px;
   line-height: 1.18;
   padding: 0;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -411,20 +444,11 @@ body {
   font-size: 16px;
   line-height: 1.18;
   padding: 0;
-  margin-top: 0px;
-  margin-bottom: 30px;
 }
 .conteiner .hidden {
   visibility: hidden;
   pointer-events: none;
   position: absolute;
-}
-
-.team {
-  background: var(--primery-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 /*футер*/
