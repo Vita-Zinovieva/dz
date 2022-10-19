@@ -22,6 +22,17 @@ html {
 *::before {
   box-sizing: inherit;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 .list {
   list-style: none;
   padding-left: 0;
@@ -134,7 +145,7 @@ body {
   padding-bottom: 25px;
 }
 
-.site-nav .navigation :last-child {
+.site-nav .navigation:last-child {
   margin-right: 0px;
 }
 
@@ -165,7 +176,7 @@ body {
   align-items: center;
 }
 
-.auth-nav .contact :last-child {
+.auth-nav .contact:last-child {
   margin-right: 0px;
 }
 
@@ -181,7 +192,7 @@ body {
   line-height: 1.36;
 }
 
-.button.primery {
+.primery {
   background: var(--acent-color);
   color: var(--acent-white-color);
   font-family: Roboto, sans-serif;
@@ -191,6 +202,17 @@ body {
   cursor: pointer;
   border-radius: 4px;
   border: none;
+
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 216px;
+  height: 50px;
+}
+
+.hero .conteiner .button:first-child {
+  margin-left: 297px;
 }
 
 /*Кнопки портфоліо*/
@@ -206,6 +228,12 @@ body {
   border-radius: 4px;
   border: none;
   text-align: center;
+
+  display: inline-flex;
+  text-align: center;
+  min-width: 38px;
+  padding: 6px 22px;
+  margin-right: 8px;
 }
 
 .button.secondary:hover,
@@ -216,13 +244,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*Кнопки розміщення*/
-/*.conteiner .button {
-  width: 216px;
-  display: inline-flex;
-  height: 50px;
-  text-align: center;
-}*/
+/*Кнопки  портфоліо розміщення*/
 
 .wight-button:first-child {
   margin-left: 297px;
@@ -239,14 +261,6 @@ body {
   justify-content: center;
 }
 
-.button.secondary {
-  display: inline-flex;
-  text-align: center;
-  min-width: 38px;
-  padding: 6px 22px;
-  margin-right: 8px;
-}
-
 /*герой на чорному фоні*/
 
 .hero {
@@ -258,19 +272,6 @@ body {
   text-align: center;
   margin-bottom: 30px;
   margin-top: 0;
-}
-
-.hero .conteiner .button {
-  display: inline-flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 216px;
-  height: 50px;
-}
-
-.hero .conteiner .button:first-child {
-  margin-left: 297px;
 }
 
 /*Переваги. розміщення*/
@@ -376,9 +377,7 @@ body {
   padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-}
 
-.work-content {
   flex-basis: calc((100% - 60px) / 3);
   margin-top: 0px;
 }
@@ -481,6 +480,6 @@ body {
   padding: 0;
 }
 
-.footer-contact :not(:last-child) {
+.footer-contact:not(:last-child) {
   margin-bottom: 9px;
 }
