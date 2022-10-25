@@ -154,9 +154,10 @@ body {
   width: 16px;
   height: 12px;
   padding: 0px;
+  margin-right: 10px;
 }
 
-.contact .icon-mail:hover,
+.icon-mail:hover,
 .icon-mail:focus {
   color: var(--acent-color);
 }
@@ -166,9 +167,9 @@ body {
   width: 10px;
   height: 16px;
   padding: 0px;
-  margin-right: 0px;
+  margin-right: 10px;
 }
-.contact .icon-phone:hover,
+.icon-phone:hover,
 .icon-phone:focus {
   color: var(--acent-color);
 }
@@ -210,13 +211,13 @@ body {
 }
 
 .overlay {
-  /* max-width: 1600px;*/
-  height: 600px;
+  min-height: 600px;
   margin-right: 0;
   margin-left: 0;
   background-position: center;
   background-size: cover;
-  background-image: /*linear-gradient(to right, rgba(47, 48, 58, 0.4)),*/ url("../images/people.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4))
+    url("../images/people.jpg");
 }
 
 .hero-titel {
@@ -325,33 +326,21 @@ body {
 }
 
 /*Іконки переваг*/
-.advantages-list-item::before {
-  display: block;
-  content: " ";
+.box-item {
+  display: flex;
   width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  justify-content: center;
   margin-bottom: 30px;
+  align-items: center;
 }
 
-.icon-antena::before {
-  background-image: url("../images/icons.svg/symbol-defs.svg#icon-Vector-1");
-}
-
-.icon-watch::before {
-  background-image: url("../images/icons.svg/symbol-defs.svg#icon-Vector-2");
-}
-
-.icon-diagram::before {
-  background-image: url("../images/icons.svg/symbol-defs.svg#icon-Vector-3");
-}
-
-.icon-astronaut::before {
-  background-image: url("../images/icons.svg/symbol-defs.svg#icon-Vector-4");
+.box-item .icon-box {
+  margin-right: auto;
+  margin-left: auto;
+  background-position: center;
 }
 
 /*Чим ми займаємося. розміщення*/
@@ -433,11 +422,9 @@ body {
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
-  margin-bottom: 30px;
   margin-top: 16px;
   padding: 0px;
   justify-content: center;
-  outline: red;
 }
 
 .icon-sociallink {
@@ -449,21 +436,27 @@ body {
   width: 44px;
   height: 44px;
   padding: 0;
-  outline: red;
 }
 
-.icon-sociallink :hover {
+.icon-link:hover {
   background-color: var(--acent-color);
+}
+.ellement:focus {
   color: var(--primery-background-color);
 }
 
-.icon-sociallink .ellement {
-  background-position: center;
-  width: 20px;
+.ellement {
+  color: #afb1b8;
 }
-.icon-team {
-  width: 270px;
-  height: 44px;
+
+.icon-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% 50%;
+  color: #afb1b8;
 }
 
 /*Постійні клієнти*/
@@ -481,7 +474,6 @@ body {
 
 .company-list {
   flex-basis: calc((100% - 250px) / 6);
-  justify-content: center;
 }
 
 .company-list-item {
@@ -495,8 +487,10 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../images/icons.svg/symbol-defs.svg#icon-logocompany3);
+  justify-content: center;
+  align-items: center;
 }
+
 .icon-company {
   color: #757575;
   width: 106px;
@@ -583,6 +577,12 @@ body {
   position: absolute;
 }
 
+.footer-tit {
+  color: var(--primery-background-color);
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
 /*футер*/
 .footer {
   background-color: var(--title-text-color);
@@ -631,4 +631,53 @@ body {
 
 .footer-contact:not(:last-child) {
   margin-bottom: 9px;
+}
+
+/*Ікони соцмереж для футера*/
+
+.icon-footer {
+  display: flex;
+  width: 206px;
+  height: 80px;
+  margin-top: 72px;
+  margin-left: 516px;
+  outline: 1px solid red;
+}
+
+.footer-tit {
+  margin-bottom: 0px;
+  height: 16px;
+}
+
+.social-icon {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0px;
+  justify-content: center;
+  height: 44px;
+}
+
+.icons {
+  display: inline-flex;
+  background-color: solid rgba(255, 255, 255, 0.1);
+  background-position: 50% 50%;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+}
+
+.icons-link:hover {
+  background-color: var(--acent-color);
+}
+.icons-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: var(--primery-background-color);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% 50%;
 }
