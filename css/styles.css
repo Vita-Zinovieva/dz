@@ -150,7 +150,7 @@ body {
 }
 /*Іконики контактів*/
 .icon-mail {
-  color: #757575;
+  fill: #757575;
   width: 16px;
   height: 12px;
   padding: 0px;
@@ -159,11 +159,11 @@ body {
 
 .icon-mail:hover,
 .icon-mail:focus {
-  color: var(--acent-color);
+  fill: var(--acent-color);
 }
 
 .icon-phone {
-  color: #757575;
+  fill: #757575;
   width: 10px;
   height: 16px;
   padding: 0px;
@@ -171,7 +171,7 @@ body {
 }
 .icon-phone:hover,
 .icon-phone:focus {
-  color: var(--acent-color);
+  fill: var(--acent-color);
 }
 
 /* Хедер+auth-nav*/
@@ -208,16 +208,16 @@ body {
 .hero {
   background-color: var(--title-text-color);
   text-align: center;
-}
-
-.overlay {
   min-height: 600px;
   margin-right: 0;
   margin-left: 0;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4))
-    url("../images/people.jpg");
+  background-image: url("../images/people.jpg");
+  background: linear-gradient(
+    to right rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
 }
 
 .hero-titel {
@@ -429,7 +429,7 @@ body {
 
 .icon-sociallink {
   display: inline-flex;
-  color: #afb1b8;
+  fill: #afb1b8;
   background-color: #ffffff;
   background-position: 50% 50%;
   border-radius: 50%;
@@ -438,15 +438,14 @@ body {
   padding: 0;
 }
 
-.icon-link:hover {
+.icon-link:hover,
+.icon-link:focus {
   background-color: var(--acent-color);
-}
-.ellement:focus {
-  color: var(--primery-background-color);
+  fill: solid #ffffff;
 }
 
 .ellement {
-  color: #afb1b8;
+  fill: #afb1b8;
 }
 
 .icon-link {
@@ -492,7 +491,7 @@ body {
 }
 
 .icon-company {
-  color: #757575;
+  fill: #afb1b8;
   width: 106px;
   height: 60px;
   padding: 0px;
@@ -500,7 +499,7 @@ body {
 
 .icon-company:hover,
 .icon-company:focus {
-  color: var(--acent-color);
+  fill: var(--acent-color);
 }
 
 /*Портфоліо, наші роботи, розміщення*/
@@ -523,6 +522,11 @@ body {
 
   flex-basis: calc((100% - 60px) / 3);
   margin-top: 0px;
+}
+
+.work {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 /*заголовки і текст для всіх секцій*/
@@ -618,6 +622,10 @@ body {
 }
 
 /*Футер, розмыщення*/
+.bottom {
+  display: flex;
+  align-items: baseline;
+}
 
 .footer {
   padding-top: 60px;
@@ -633,15 +641,15 @@ body {
   margin-bottom: 9px;
 }
 
+.bottom-address {
+  margin-right: 70px;
+  margin-bottom: 60px;
+}
+
 /*Ікони соцмереж для футера*/
 
 .icon-footer {
   display: flex;
-  width: 206px;
-  height: 80px;
-  margin-top: 72px;
-  margin-left: 516px;
-  outline: 1px solid red;
 }
 
 .footer-tit {
@@ -654,16 +662,10 @@ body {
   flex-wrap: nowrap;
   gap: 10px;
   margin-top: 20px;
-  padding: 0px;
   justify-content: center;
-  height: 44px;
 }
 
 .icons {
-  display: inline-flex;
-  background-color: solid rgba(255, 255, 255, 0.1);
-  background-position: 50% 50%;
-  border-radius: 50%;
   width: 44px;
   height: 44px;
   padding: 0;
@@ -676,8 +678,9 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  color: var(--primery-background-color);
+  fill: var(--primery-background-color);
   justify-content: center;
   align-items: center;
   border-radius: 50% 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
