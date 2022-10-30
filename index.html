@@ -18,7 +18,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    "
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -30,12 +29,14 @@
         <nav>
           <ul class="site-nav list">
             <li class="navigation">
-              <a href="" class="link current">Студія</a>
+              <a href="" class="link current strip">Студія</a>
             </li>
             <li class="navigation">
-              <a href="./portfolio.html" class="link">Портфоліо</a>
+              <a href="./portfolio.html" class="link strip">Портфоліо</a>
             </li>
-            <li class="navigation"><a href="" class="link">Контакти</a></li>
+            <li class="navigation">
+              <a href="" class="link strip">Контакти</a>
+            </li>
           </ul>
         </nav>
 
@@ -66,9 +67,20 @@
       <section class="hero">
         <div class="conteiner">
           <h1 class="hero-titel">Ефективні рішення для <br />вашого бізнесу</h1>
-          <button type="button" class="button primery">Замовити послугу</button>
+          <button type="button" class="button primery" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <a href="" class="button-close" data-close-modal
+            ><svg class="icon-close">
+              <use href="./images/icons.svg#close.svg"></use></svg
+          ></a>
+        </div>
+      </div>
 
       <section class="section advantage">
         <div class="conteiner">
@@ -143,6 +155,9 @@
                 alt=" Two hands on the computer keyboard"
                 width="370"
               />
+              <div class="info">
+                <p class="info-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="card">
               <img
@@ -150,6 +165,9 @@
                 alt="Two hands on the laptop keyboard"
                 width="370"
               />
+              <div class="info">
+                <p class="info-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="card">
               <img
@@ -157,6 +175,9 @@
                 alt="Two hands on planshet"
                 width="370"
               />
+              <div class="info">
+                <p class="info-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -503,5 +524,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

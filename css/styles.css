@@ -11,6 +11,7 @@
   --acent-white-color: #f5f5f5;
   --secodary-button-color: #f5f4fa;
   --primery-background-color: #ffffff;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*<span class="letter">HTML</span>*/
@@ -31,6 +32,10 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .list {
@@ -126,6 +131,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -133,7 +140,7 @@ body {
   color: var(--acent-color);
 }
 
-/* розміщення навігації */
+/* розміщення навігації + підкреслення*/
 .conteiner .site-nav {
   display: flex;
   margin-right: auto;
@@ -143,11 +150,35 @@ body {
   margin-right: 50px;
   padding-top: 24px;
   padding-bottom: 25px;
+  position: relative;
 }
 
 .site-nav .navigation:last-child {
   margin-right: 0px;
 }
+
+.navigation {
+  position: relative;
+}
+
+.strip::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  transition: opacity 250 cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--acent-color);
+  opacity: 0;
+}
+
+.strip:hover::after,
+.strip:focus::after {
+  opacity: 1;
+}
+
 /*Іконики контактів*/
 .icon-mail {
   fill: #757575;
@@ -155,6 +186,8 @@ body {
   height: 12px;
   padding: 0px;
   margin-right: 10px;
+
+  transition: fill 250 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-mail:hover,
@@ -168,6 +201,8 @@ body {
   height: 16px;
   padding: 0px;
   margin-right: 10px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-phone:hover,
 .icon-phone:focus {
@@ -182,6 +217,11 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   font-weight: 500;
+
+  display: flex;
+  align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -243,6 +283,8 @@ body {
   align-items: center;
   width: 216px;
   height: 50px;
+
+  transition: background-color box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .primery:hover,
@@ -274,6 +316,9 @@ body {
   min-width: 38px;
   padding: 6px 22px;
   margin-right: 8px;
+
+  transition: color background-color box-shadow 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.secondary:hover,
@@ -343,13 +388,7 @@ body {
   align-items: center;
 }
 
-.box-item .icon-box {
-  margin-right: auto;
-  margin-left: auto;
-  background-position: center;
-}
-
-/*Чим ми займаємося. розміщення*/
+/*Чим ми займаємося. розміщення + тумба знаписом*/
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -357,9 +396,29 @@ body {
   gap: 30px;
 }
 
+.card-list .card {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
 .card-list-list {
   flex-basis: calc((100% - 90px) / 3);
   justify-content: space-around;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+  text-align: center;
+  display: flex;
 }
 
 /*Секція команда розміщення*/
@@ -452,6 +511,7 @@ body {
 
 .ellement {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ellement:hover,
@@ -467,6 +527,7 @@ body {
   align-items: center;
   border-radius: 50% 50%;
   color: #afb1b8;
+  transition: background-color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Постійні клієнти*/
@@ -498,6 +559,8 @@ body {
   background-position: center;
   justify-content: center;
   align-items: center;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-list-item:hover,
@@ -510,6 +573,8 @@ body {
   width: 106px;
   height: 60px;
   padding: 0px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-company:hover,
@@ -517,7 +582,7 @@ body {
   fill: var(--acent-color);
 }
 
-/*Портфоліо, наші роботи, розміщення*/
+/*Портфоліо, наші роботи, розміщення + блакитний оверлей*/
 
 .example-list {
   display: flex;
@@ -534,15 +599,52 @@ body {
   padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-
   flex-basis: calc((100% - 60px) / 3);
   margin-top: 0px;
+  text-decoration: none;
+}
+.work {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work:hover,
 .work:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+/*тумба*/
+
+.tumba {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.work {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(33, 150, 243, 0.9),
+    rgba(33, 150, 243, 0.9)
+  );
+  /* opacity: 1;*/
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center top;
+  transform: translateY(100%);
+}
+
+.work:hover .overlay {
+  transform: translateY(0);
 }
 
 /*заголовки і текст для всіх секцій*/
@@ -553,6 +655,7 @@ body {
   text-transform: uppercase;
 }
 .section-text {
+  color: var(--title-text-color);
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -569,8 +672,10 @@ body {
   font-size: 18px;
   line-height: 2;
   margin-bottom: 4px;
+  text-decoration: none;
 }
 .work-content .section-text {
+  color: var(--title-text-color);
   margin-top: 0px;
   font-weight: normal;
   font-size: 16px;
@@ -603,6 +708,31 @@ body {
   text-transform: uppercase;
 }
 
+.info-text {
+  color: var(--acent-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  margin-left: 107px;
+  padding: 0;
+}
+
+.overlay-text {
+  color: var(--acent-white-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  text-align: left;
+  margin-top: 63px;
+  margin-bottom: 63px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding: 0;
+}
+
 /*футер*/
 .footer {
   background-color: var(--title-text-color);
@@ -615,6 +745,7 @@ body {
   line-height: 1.7;
   text-decoration: none;
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .footer-address:hover,
@@ -630,6 +761,7 @@ body {
   font-style: normal;
 
   margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .footer-contact:hover,
@@ -700,4 +832,51 @@ body {
   align-items: center;
   border-radius: 50% 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*Мщдальне вікно*/
+.backdrop {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--primery-background-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.button-close {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+
+  border: #2196f3;
+}
+
+.icon-close {
+  width: 18px;
+  height: 18px;
+  justify-content: center;
+  align-items: center;
 }
