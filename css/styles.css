@@ -140,6 +140,13 @@ body {
   color: var(--acent-color);
 }
 
+.site-nav .link:hover .icon-mail,
+.site-nav .link:focus .icon-mail,
+.site-nav .link:hover .icon-phone,
+.site-nav .link:focus .icon-phone {
+  fill: var(--acent-color);
+}
+
 /* розміщення навігації + підкреслення*/
 .conteiner .site-nav {
   display: flex;
@@ -161,7 +168,7 @@ body {
   position: relative;
 }
 
-.strip::after {
+.selected::after {
   content: " ";
   position: absolute;
   display: block;
@@ -171,12 +178,6 @@ body {
   height: 4px;
   transition: opacity 250 cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--acent-color);
-  opacity: 0;
-}
-
-.strip:hover::after,
-.strip:focus::after {
-  opacity: 1;
 }
 
 /*Іконики контактів*/
@@ -190,8 +191,8 @@ body {
   transition: fill 250 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-mail:hover,
-.icon-mail:focus {
+.auth-nav .link:hover .icon-mail,
+.auth-nav .link:hover .icon-mail {
   fill: var(--acent-color);
 }
 
@@ -204,8 +205,8 @@ body {
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-phone:hover,
-.icon-phone:focus {
+.auth-nav .link:hover .icon-phone,
+.auth-nav .link:focus .icon-phone {
   fill: var(--acent-color);
 }
 
@@ -264,6 +265,7 @@ body {
   color: var(--acent-white-color);
   font-size: 44px;
   line-height: 1.36;
+  font-weight: 900;
 }
 
 .primery {
@@ -419,6 +421,8 @@ body {
   );
   text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Секція команда розміщення*/
@@ -514,9 +518,9 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ellement:hover,
-.ellement:focus {
-  fill: var(--primery-background-color);
+.icon-link:hover .ellement,
+.icon-link:focus .ellement {
+  fill: var(--acent-white-color);
 }
 
 .icon-link {
@@ -564,7 +568,7 @@ body {
 }
 
 .company-list-item:hover,
-.company-list-item:hover {
+.company-list-item:focus {
   border-color: var(--acent-color);
 }
 
@@ -577,8 +581,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-company:hover,
-.icon-company:focus {
+.company-list-item:hover .icon-company,
+.company-list-item:focus .icon-company {
   fill: var(--acent-color);
 }
 
@@ -706,6 +710,7 @@ body {
   color: var(--primery-background-color);
   line-height: 1.14;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .info-text {
@@ -714,10 +719,10 @@ body {
   font-size: 14px;
   line-height: 1.17;
   text-align: center;
-  margin-top: 27px;
   margin-bottom: 27px;
-  margin-left: 107px;
   padding: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .overlay-text {
