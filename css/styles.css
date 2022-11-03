@@ -946,6 +946,7 @@ body {
   align-items: center;
   background-color: #ffffff;
   border: transparent;
+  cursor: pointer;
 }
 
 .icon-close {
@@ -953,6 +954,12 @@ body {
   right: 8px;
   width: 30px;
   height: 30px;
+  transition: transfore 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close:hover,
+.icon-close:focus {
+  fill: var(--acent-color);
 }
 
 /*Форма модалки*/
@@ -1013,6 +1020,7 @@ body {
 
 .input-form {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .part-form label {
@@ -1053,6 +1061,8 @@ body {
   width: 448px;
   height: 120px;
   border-color: rgba(33, 33, 33, 0.2);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 textarea {
@@ -1073,6 +1083,7 @@ textarea {
 .checkbox {
   appearance: none;
   position: absolute;
+  cursor: pointer;
 }
 
 .checkbox:checked + .icon-checkbox {
@@ -1127,11 +1138,11 @@ textarea {
 /*.input-form:hover ~ .icon-name,*/
 .input-form:focus ~ .iconame,
 .input-form:focus ~ .icotel,
-.input-form:focus ~ .iconmail,
+.input-form:focus ~ .iconemail,
 .input-form:hover ~ .iconame,
 .input-form:hover ~ .icotel,
-.input-form:hover ~ .iconmail {
-  color: var(--acent-color);
+.input-form:hover ~ .iconemail {
+  fill: var(--acent-color);
 }
 
 .iconemail,
@@ -1144,5 +1155,5 @@ textarea {
   left: 12px;
   bottom: 11px;
   display: inline-block;
-  color: red;
+  fill: var(--title-text-color);
 }
