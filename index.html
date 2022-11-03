@@ -83,6 +83,74 @@
             </svg>
           </button>
         </div>
+
+        <div class="modal-form">
+          <form class="form data-form">
+            <p class="textform">Залиште свої дані, ми вам передзвонимо</p>
+
+            <div class="part-form">
+              <label for="name">Ім'я</label>
+              <input class="input-form" type="text" name="name" id="name" />
+
+              <svg class="iconame">
+                <use
+                  href="./images/icons3.svg/symbol-defs.svg#icon-person-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
+
+            <div class="part-form">
+              <label for="name">Телефон</label>
+              <input class="input-form" type="tel" name="tel" id="tel" />
+              <svg class="icotel">
+                <use
+                  href="./images/icons3.svg/symbol-defs.svg#icon-phone-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
+
+            <div class="part-form">
+              <label for="mail">Пошта</label>
+              <input class="input-form" type="mail" name="mail" id="mail" />
+              <svg class="iconemail">
+                <use
+                  href="./images/icons3.svg/symbol-defs.svg#icon-email-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
+
+            <div class="part-form-comment">
+              <label for="comment">Коментар</label>
+              <textarea
+                class="comment"
+                name="comment"
+                id="comment"
+                placeholder="Введіть текст"
+                rows="8"
+              ></textarea>
+            </div>
+
+            <div class="option">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="consent"
+                value="consent"
+                id="consent"
+              />
+              <span class="icon-checkbox"></span>
+              <label for="consent"
+                >Погоджуюся з розсилкою та приймаю<a href="" class="contract"
+                  >Умови договору</a
+                ></label
+              >
+            </div>
+
+            <div class="">
+              <button class="button-form" type="submit">Відправити</button>
+            </div>
+          </form>
+        </div>
       </div>
 
       <section class="section advantage">
@@ -524,6 +592,22 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="form-send">
+          <form class="forma">
+            <p class="footer-tit">Підпишіться на розсилку</p>
+            <label for="mail"></label>
+            <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            <button type="submit" class="buttonmail">
+              Підписатися
+              <svg class="icon-send" width="24" height="24">
+                <use
+                  href="./images/icons3.svg/symbol-defs.svg#icon-icon-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
