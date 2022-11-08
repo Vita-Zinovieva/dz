@@ -1,0 +1,28 @@
+.logo {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    text-decoration: none;
+    color: $acent-color;
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  
+.studio-logo {
+    color: $title-text-color;
+    font-family: $logo-font;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  
+  .studio-logos {
+    color: $acent-white-color;
+    font-family: $logo-font;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.15;
+  }

@@ -1,0 +1,29 @@
+
+/*Переваги. розміщення*/
+.advantage {
+  padding-bottom: 0px;
+}
+
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .advantages__item {
+    flex-basis: calc((100% - 90px) / 4);
+    justify-content: center;
+  }
+  
+    /*Іконки переваг*/
+  .advantage__box-item {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  

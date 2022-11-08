@@ -1,0 +1,75 @@
+  /* розміщення навігації + підкреслення*/
+  .site-nav {
+    display: flex;
+    margin-right: auto;
+  }
+  
+  .site-nav__navigation {
+    margin-right: 50px;
+    position: relative;
+  }
+  
+  .site-nav__navigation:last-child {
+    margin-right: 0px;
+  }
+  
+  /*Іконики контактів*/
+  .auth-nav__icon-mail {
+    fill: #757575;
+    width: 16px;
+    height: 12px;
+    padding: 0px;
+    margin-right: 10px;
+    transition: fill $cubic-bezier;
+  }
+  
+  .auth-nav__link:hover .auth-nav__icon-mail,
+  .auth-nav__link:hover .auth-nav__icon-mail {
+    fill: $acent-color;
+  }
+  
+  .auth-nav__icon-phone {
+    fill: #757575;
+    width: 10px;
+    height: 16px;
+    padding: 0px;
+    margin-right: 10px;
+    transition: fill $cubic-bezier;
+  }
+  .auth-nav__link:hover .auth-nav__icon-phone,
+  .auth-nav__link:focus .auth-nav__icon-phone {
+    fill: $acent-color;
+  }
+  
+  /* Хедер+auth-nav*/
+  .auth-nav__link {
+    color: $primery-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: color $cubic-bezier;
+  }
+  .auth-nav__link:hover,
+  .auth-nav__link:focus {
+    color: $acent-color;
+  }
+  /* розміщення контактів */
+  .auth-nav {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .auth-nav__contact {
+    margin-right: 50px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    align-items: center;
+  }
+  
+  .auth-nav__contact:last-child {
+    margin-right: 0px;
+  }
