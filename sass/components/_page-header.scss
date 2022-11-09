@@ -28,10 +28,7 @@
     transition: color $cubic-bezier;
   }
   
-  .site-nav__link:hover,
-  .site-nav__link:focus {
-    color: var(--acent-color);
-  }
+  
   
   .site-nav__link:hover .icon-mail,
   .site-nav__link:focus .icon-mail,
@@ -50,4 +47,9 @@
     font-weight: 500;
     padding-top: 32px;
     padding-bottom: 32px;
+    &:hover,
+    &:focus {
+      color: var(--acent-color);
+    }
+
   }

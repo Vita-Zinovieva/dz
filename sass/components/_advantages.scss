@@ -15,6 +15,21 @@
     justify-content: center;
   }
   
+/*advantage {
+  padding-bottom: 0px;
+&__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+    justify-content: center;
+  }
+}
+  */
+
     /*Іконки переваг*/
   .advantage__box-item {
     display: flex;

@@ -2,15 +2,16 @@
   .site-nav {
     display: flex;
     margin-right: auto;
-  }
   
-  .site-nav__navigation {
+  
+  &__navigation {
     margin-right: 50px;
     position: relative;
   }
   
-  .site-nav__navigation:last-child {
-    margin-right: 0px;
+  &__navigation:last-child {
+    margin-right: 0px; 
+  }
   }
   
   /*Іконики контактів*/
@@ -21,11 +22,11 @@
     padding: 0px;
     margin-right: 10px;
     transition: fill $cubic-bezier;
-  }
-  
-  .auth-nav__link:hover .auth-nav__icon-mail,
-  .auth-nav__link:hover .auth-nav__icon-mail {
+   
+  .auth-nav__link:hover &,
+  .auth-nav__link:hover & {
     fill: $acent-color;
+   }
   }
   
   .auth-nav__icon-phone {
@@ -35,11 +36,12 @@
     padding: 0px;
     margin-right: 10px;
     transition: fill $cubic-bezier;
-  }
-  .auth-nav__link:hover .auth-nav__icon-phone,
-  .auth-nav__link:focus .auth-nav__icon-phone {
+ 
+  .auth-nav__link:hover &,
+  .auth-nav__link:focus & {
     fill: $acent-color;
   }
+   }
   
   /* Хедер+auth-nav*/
   .auth-nav__link {
@@ -52,18 +54,19 @@
     display: flex;
     align-items: center;
     transition: color $cubic-bezier;
-  }
-  .auth-nav__link:hover,
-  .auth-nav__link:focus {
+  
+  &:hover,
+  &:focus {
     color: $acent-color;
   }
+}
+
   /* розміщення контактів */
   .auth-nav {
     display: flex;
     margin-left: auto;
-  }
-  
-  .auth-nav__contact {
+   
+    .auth-nav__contact {
     margin-right: 50px;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -73,3 +76,4 @@
   .auth-nav__contact:last-child {
     margin-right: 0px;
   }
+}

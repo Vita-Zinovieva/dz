@@ -11,6 +11,14 @@
     flex-wrap: nowrap;
     gap: 30px;
     flex-basis: calc((100% - 250px) / 6);
+    &__icon {
+      fill: #afb1b8;
+      width: 106px;
+      height: 60px;
+      padding: 0px;
+      transition: fill $cubic-bezier;
+    }
+
   }
   
   .company__list-item {
@@ -38,12 +46,6 @@
         }
 
   }
-   .company__icon {
-    fill: #afb1b8;
-    width: 106px;
-    height: 60px;
-    padding: 0px;
-    transition: fill $cubic-bezier;
-  }
+   
   
   

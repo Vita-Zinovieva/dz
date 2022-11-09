@@ -1,5 +1,7 @@
 /*футер*/
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $title-text-color;
     font-family: Roboto, sans-serif;
   }
@@ -39,12 +41,13 @@
   .bottom {
     display: flex;
     align-items: baseline;
+
+    &__address {
+      margin-right: 70px;
+      margin-bottom: 60px;
+    }
   }
   
-  .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   
   .footer .logo {
     margin-bottom: 20px;
@@ -54,12 +57,7 @@
   .address-list__contact:not(:last-child) {
     margin-bottom: 9px;
   }
-  
-  .bottom__address {
-    margin-right: 70px;
-    margin-bottom: 60px;
-  }
-  
+     
   /*Ікони соцмереж для футера*/
   
   .icon-footer {
@@ -87,9 +85,7 @@
     padding: 0;
   }
   
-  .social-icon__link:hover {
-    background-color: $acent-color;
-  }
+  
   .social-icon__link {
     width: 44px;
     height: 44px;
@@ -100,4 +96,8 @@
     border-radius: 50% 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color $cubic-bezier;
+    
+    &:hover {
+      background-color: $acent-color;
+    }
   }

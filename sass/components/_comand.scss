@@ -14,7 +14,7 @@
   }
   
   .alist {
-    flex-basis: calc((100% 90) / 4);
+    flex-basis: calc(100% - 90px) / 4;
     justify-content: space-around;
     list-style: none;
     padding-left: 0;
@@ -77,13 +77,21 @@
     height: 44px;
     padding: 0;
   }
-  
-  
+   
   .icon-team__ellement {
     fill: #afb1b8;
     transition: fill $cubic-bezier;
   }
-  
+/*Ховер можна задати так або перезадати на 
+  .icon-team__ellement {
+    fill: #afb1b8;
+    transition: fill $cubic-bezier;
+
+    .icon-team__link:hover &,
+    .icon-team__link:focus & {
+                    fill: $acent-white-color;
+                }
+  } */
   
   .icon-team__link {
     width: 44px;
