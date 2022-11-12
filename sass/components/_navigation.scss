@@ -1,8 +1,9 @@
   /* розміщення навігації + підкреслення*/
   .site-nav {
+    @media screen and(min-wight: 1200px){
     display: flex;
-    margin-right: auto;
-  
+    margin-right: auto; }
+    }
   
   &__navigation {
     margin-right: 50px;
@@ -12,7 +13,7 @@
   &__navigation:last-child {
     margin-right: 0px; 
   }
-  }
+ /* }*/
   
   /*Іконики контактів*/
   .auth-nav__icon-mail {
@@ -51,20 +52,29 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     font-weight: 500;
-    display: flex;
-    align-items: center;
+   /* display: flex;
+    align-items: center;*/
     transition: color $cubic-bezier;
   
   &:hover,
   &:focus {
     color: $acent-color;
   }
+
+
+  @media screen and(min-wight: 1200px){
+    display: flex;
+    align-items: center; 
+   }
 }
 
   /* розміщення контактів */
   .auth-nav {
+  @media screen and(min-wight: 1200px) {
     display: flex;
     margin-left: auto;
+  } 
+}
    
     .auth-nav__contact {
     margin-right: 50px;
@@ -76,4 +86,4 @@
   .auth-nav__contact:last-child {
     margin-right: 0px;
   }
-}
+/*}*/

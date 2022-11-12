@@ -2,10 +2,7 @@
 /* герой , заголовок + головна кнопка*/
 .hero {
   background-color: $title-text-color;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
-  min-height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-position: center;
@@ -15,6 +12,22 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/people.jpg);
+
+    @media screen  and (min-wight: 480px) and (min-wight: 767px) {
+      min-height: 400px;
+      padding-top: 118px;
+      padding-bottom: 118px;
+      
+    }
+      
+    @media screen  and (min-wight: 1200px) {
+      min-height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      
+    }
+
+
 }
 
 .hero__titel {
@@ -41,11 +54,17 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 216px;
-  height: 50px;
-
   transition: background-color box-shadow $cubic-bezier;
 
+  @media screen and(min-wight: 480px) and (max-width: 767px){
+   width: 200px;
+  height: 50px; 
+  }
+  @media screen and(min-wight: 1200px){
+    width: 216px;
+   height: 50px; 
+   }
+  
     &:hover,
     &:focus {
       background-color: #188ce8;

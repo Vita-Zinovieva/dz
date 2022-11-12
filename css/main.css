@@ -57,10 +57,9 @@ body {
 .conteiner {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
+  }
 
 .section {
   padding-top: 94px;
@@ -98,8 +97,7 @@ body {
 
 /*розміщення хедер*/
 .page-header .conteiner {
-  display: flex;
-  align-items: center;
+ align-items: center;
 }
 
 .page-header {
@@ -135,7 +133,6 @@ body {
 
 .site-nav__link {
   position: relative;
-  /* color: var(--title-text-color);*/
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -150,7 +147,7 @@ body {
 
 /* розміщення навігації + підкреслення*/
 .site-nav {
-  display: flex;
+  
   margin-right: auto;
 }
 .site-nav__navigation {
@@ -193,8 +190,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  font-weight: 500;
-  display: flex;
+ 
+ 
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -204,7 +201,7 @@ body {
 
 /* розміщення контактів */
 .auth-nav {
-  display: flex;
+  
   margin-left: auto;
 }
 .auth-nav .auth-nav__contact {
@@ -220,10 +217,7 @@ body {
 /* герой , заголовок + головна кнопка*/
 .hero {
   background-color: #212121;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
-  min-height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-position: center;
@@ -311,8 +305,6 @@ body {
 }
 
 .advantages__list {
-  display: flex;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -320,31 +312,16 @@ body {
   flex-basis: calc((100% - 90px) / 4);
   justify-content: center;
 }
-
-/*advantage {
-  padding-bottom: 0px;
-&__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-
-  &__item {
-    flex-basis: calc((100% - 90px) / 4);
-    justify-content: center;
-  }
-}
-  */
 /*Іконки переваг*/
 .advantage__box-item {
-  display: flex;
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   justify-content: center;
   margin-bottom: 30px;
   align-items: center;
+
+
 }
 
 /*Чим ми займаємося. розміщення + тумба знаписом*/
@@ -448,14 +425,11 @@ body {
 }
 
 .conteiner .alist {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0px;
 }
 
 .alist {
   flex-basis: calc(100% - 90px)/4;
-  justify-content: space-around;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -463,7 +437,6 @@ body {
 
 .alist__team {
   text-align: center;
-  width: 270px;
   height: auto;
   padding-left: 24px;
   padding-right: 24px;
@@ -477,13 +450,13 @@ body {
   height: auto;
 }
 
-.comand .conteiner {
-  margin-bottom: 94px;
+/*.comand .conteiner {
+  
 }
 
 .conteiner .section-titel {
-  margin-bottom: 50px;
-}
+  
+}*/
 
 .alist__person {
   background: #ffffff;
@@ -552,14 +525,10 @@ body {
 
 /*Постійні клієнти*/
 .client {
-  padding-bottom: 94px;
-  padding-top: 94px;
   margin: 0;
 }
 
 .company {
-  display: flex;
-  flex-wrap: nowrap;
   gap: 30px;
   flex-basis: calc((100% - 250px) / 6);
 }
@@ -572,16 +541,13 @@ body {
 }
 
 .company__list-item {
-  display: flex;
   content: " ";
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  justify-content: center;
   align-items: center;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -729,12 +695,12 @@ body {
 }
 
 /*Футер, розмыщення*/
-.bottom {
+/*.bottom {
   display: flex;
   align-items: baseline;
-}
+}*/
 .bottom__address {
-  margin-right: 70px;
+  
   margin-bottom: 60px;
 }
 

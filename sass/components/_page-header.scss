@@ -1,7 +1,12 @@
 /*розміщення хедер*/
 .page-header .conteiner {
-    display: flex;
+  /*  display: flex;*/
     align-items: center;
+
+    @media screen and (min-width:768px) {
+      display: flex;
+      
+    }
   }
   .page-header {
     border-bottom: 1px solid #ececec;
@@ -39,7 +44,7 @@
   
   .site-nav__link {
     position: relative;
-    /* color: var(--title-text-color);*/
+    
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;

@@ -5,40 +5,37 @@
 }
 
 .advantages__list {
+  @media screen and  (min-width: 768px){ 
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+  }
   }
   
   .advantages__item {
     flex-basis: calc((100% - 90px) / 4);
     justify-content: center;
   }
-  
-/*advantage {
-  padding-bottom: 0px;
-&__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  &__item {
-    flex-basis: calc((100% - 90px) / 4);
-    justify-content: center;
-  }
-}
-  */
-
-    /*Іконки переваг*/
+     /*Іконки переваг*/
   .advantage__box-item {
-    display: flex;
-    width: 270px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
-    justify-content: center;
     margin-bottom: 30px;
     align-items: center;
+    width: 450px;
+    
+    @media screen and  (min-width: 768px) {
+      
+      width: 354px;
+      display: flex;
+      justify-content: center; 
+    } 
+
+    @media screen and  (min-width: 1200px) {
+      width: 270px;
+      display: flex;
+      justify-content: center; 
+    } 
   }
   

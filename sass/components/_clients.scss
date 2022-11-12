@@ -1,14 +1,20 @@
 
 /*Постійні клієнти*/
 .client {
-    padding-bottom: 94px;
-    padding-top: 94px;
-    margin: 0;
+   margin: 0;
+      padding-bottom: 0px;
+      padding-top: 0px;
+          
+    @media screen and( min-wight: 1200px ){
+      padding-bottom: 94px;
+      padding-top: 94px;
+     }
+   
   }
   
   .company {
-    display: flex;
-    flex-wrap: nowrap;
+  /*  display: flex;
+    flex-wrap: nowrap;*/
     gap: 30px;
     flex-basis: calc((100% - 250px) / 6);
     &__icon {
@@ -18,21 +24,31 @@
       padding: 0px;
       transition: fill $cubic-bezier;
     }
-
+      @media screen and( min-wight: 480px ){
+        display: none;
+             
+      }
+  
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: nowrap; 
+      }
+      @media screen and( min-wight: 1200px ){
+        display: flex;
+        flex-wrap: nowrap; 
+       }
   }
   
   .company__list-item {
-    display: flex;
     content: " ";
-    width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    justify-content: center;
-    align-items: center;
+    width: 266px;
+    display: none
     transition: border-color $cubic-bezier;
 
       &:hover,
@@ -40,11 +56,24 @@
         border-color: $acent-color;
       }
 
-        &:hover .company__icon,
-        &:focus .company__icon {
-          fill: $acent-color;
+      &:hover .company__icon,
+      &:focus .company__icon {
+        fill: $acent-color;
+        }
+ 
+      @media screen and (min-width: 768px) {
+        width: 266px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         }
 
+      @media screen and (min-width: 1200px) {
+        width: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
   }
    
   

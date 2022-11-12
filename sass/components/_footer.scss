@@ -39,11 +39,22 @@
     
   /*Футер, розмыщення*/
   .bottom {
-    display: flex;
-    align-items: baseline;
-
+    @media screen and (min-wight:480px) {
+     margin-right: 124px;
+     margin-left: 124px;
+    }
+    @media screen and (min-wight:768px) {
+      display: flex;
+      align-items: baseline;
+      margin-left: 76px;
+      }
+      @media screen and (min-wight:1200px) {
+        display: flex;
+        align-items: baseline;
+        margin-right: 70px;
+        }
+    
     &__address {
-      margin-right: 70px;
       margin-bottom: 60px;
     }
   }
@@ -60,10 +71,10 @@
      
   /*Ікони соцмереж для футера*/
   
-  .icon-footer {
+ /* .icon-footer {
     display: flex;
     flex-direction: column;
-  }
+  }*/
   
   .icon-footer__tit,
   .forma__footer-tit {
@@ -72,11 +83,12 @@
   }
   
   .social-icon {
-    display: flex;
+   /* display: flex;
     flex-wrap: nowrap;
+    justify-content: center;*/
     gap: 10px;
     margin-top: 20px;
-    justify-content: center;
+    
   }
   
   .social-icon__icons {
@@ -89,10 +101,10 @@
   .social-icon__link {
     width: 44px;
     height: 44px;
-    display: flex;
-    fill: $primery-background-color;
+   /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    fill: $primery-background-color;
     border-radius: 50% 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color $cubic-bezier;
@@ -100,4 +112,10 @@
     &:hover {
       background-color: $acent-color;
     }
+    @media screen and (min-wight:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
   }

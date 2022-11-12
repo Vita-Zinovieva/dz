@@ -1,17 +1,19 @@
 
 /*Чим ми займаємося. розміщення + тумба знаписом*/
 .card-list {
+  @media screen and (min-width:1200px) {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
     gap: 30px;
-  }
+  } }
   
   .card-list__card {
+    @media screen and (min-width:1200px){
     display: flex;
     flex-wrap: wrap;
     position: relative;
-  }
+  } }
   
   .card-list-list {
     flex-basis: calc(100% - 90px) / 3;
@@ -29,17 +31,20 @@
       rgba(47, 48, 58, 0.8)
     );
     text-align: center;
+    @media screen and (min-width:1200px){
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; }
   }
+  
+  
 
   
 /*Портфоліо, наші роботи, розміщення + блакитний оверлей*/
 
 .example-list {
-    display: flex;
-    flex-wrap: wrap;
+   /* display: flex;
+    flex-wrap: wrap;*/
     padding: 0px;
     margin-top: 56px;
     gap: 30px;

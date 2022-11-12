@@ -1,13 +1,13 @@
 
 /*Форма відправки*/
 .forma {
-    width: 570px;
+   /* width: 570px;*/
     margin-left: 93px;
   }
   
   .forma__buttonmail {
-    display: inline-flex;
-    justify-content: center;
+   /* display: inline-flex;
+    justify-content: center;*/
     width: 200px;
     height: 50px;
     padding-top: 10px;
@@ -21,9 +21,7 @@
     border: none;
     background: $acent-color;
     color: $acent-white-color;
-    /*padding-bottom: 10px;*/
-    /* text-align: center;*/
-  }
+     }
   
   .forma__icon-send {
     margin-left: 10px;
@@ -52,7 +50,7 @@
   
   /*Модальне вікно*/
   .backdrop {
-    display: flex;
+   /* display: flex;*/
     position: fixed;
     width: 100%;
     height: 100%;
@@ -71,6 +69,10 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+
+    @media screen and (min-wight:768px) {
+      display: flex;
+    }
   }
   
   .modal {
@@ -151,11 +153,16 @@
   }
   
   .modal__part-form {
-    display: flex;
+   /* display: flex;*/
     flex-direction: column;
     margin-bottom: 10px;
     position: relative;
     height: 58px;
+
+    @media screen and (min-wight:768px) {
+      display: flex;
+    }
+    
   }
   
   .modal__part-form input {
@@ -202,10 +209,14 @@
   }
   
   .modal__form-comment {
-    display: flex;
-    flex-direction: column;
+    
     margin-bottom: 10px;
     position: relative;
+
+    @media screen and (min-wight:768px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   
   .modal__comment {
@@ -263,20 +274,7 @@
     background-size: contain;
     background-origin: border-box;
   }
-  /*
-  .modal__iconame {
-   top: 104px;
-     
-  }
-  
-  .modal__icotel{
-    top: 167px;
-    }
-  
-  .modal__iconemail {
-    top: 230px;
-    }*/
-  
+   
   .modal__input-form:focus ~ .modal__iconame,
   .modal__input-form:focus ~ .modal__icotel,
   .modal__input-form:focus ~ .modal__iconemail,
