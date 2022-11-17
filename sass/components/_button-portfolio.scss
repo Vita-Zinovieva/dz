@@ -32,17 +32,50 @@
   /*Кнопки  портфоліо розміщення*/
    
   .button__roster {
-    display: inline-flex;
-    text-align: center;
-    justify-content: space-around;
-  }
+    justify-content: flex-start;
+
+    @media screen and  (min-width: 768px){ 
+     /* display: inline-flex;*/
+      text-align: center;
+      justify-content: space-around;
+     }
+   
+
+
+    @media screen and  (min-width: 1200px){ 
+      display: inline-flex;
+      text-align: center;
+      justify-content: space-around;
+     }
+   }
+
+  
   
   .button__wight-button {
     display: inline-flex;
     justify-content: center;
+    margin-bottom: 15px;
+  }
 
-    &:first-child {
+
+  .button__wight-button:nth-child(3){
+    margin-right: 39px;
+        }
+  
+ /*@media screen and  (min-width: 1200px) { 
+    .button__wight-button:first-child  {
+    margin-left: 96px;
+  }
+  }*/
+
+  @media screen and  (min-width: 1200px){ 
+    .button__wight-button:first-child {
       margin-left: 297px;
     }
+  }
 
+  @media screen and  (min-width: 768px){ 
+    .button__wight-button:nth-child(3){
+    margin-right: 8px;
+  }
   }

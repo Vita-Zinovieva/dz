@@ -29,34 +29,58 @@
       <div class="conteiner">
         <a href="./index.html" class="logo">Web<span class="studio-logo">Studio</span></a>
 
-        <nav>
-          <ul class="site-nav list">
-            <li class="site-nav__navigation">
-              <a href="./index.html" class="site-nav__link">Студія</a>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="40" height="40" aria-label="Перемикач мобильного меню">
+            <use class="icon-cross" href="./images/icons4.svg/symbol-defs.svg#icon-cross"></use>
+            <use class="icon-menu" href="./images/icons4.svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav>
+            <ul class="site-nav list">
+              <li class="site-nav__navigation">
+                <a href="./index.html" class="site-nav__link">Студія</a>
+              </li>
+              <li class="site-nav__navigation">
+                <a href="./portfolio.html" class="site-nav__link site-nav__current">Портфоліо</a>
+              </li>
+              <li class="navigation">
+                <a href="" class="site-nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <ul class="auth-nav list">
+            <li class="auth-nav__contact">
+              <a href="" class="auth-nav__link auth-nav__current">
+                <svg class="auth-nav__icon-mail">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-convert"></use>
+                </svg>info@devstudio.com</a>
             </li>
-            <li class="site-nav__navigation">
-              <a href="./portfolio.html" class="site-nav__link site-nav__current">Портфоліо</a>
-            </li>
-            <li class="navigation">
-              <a href="" class="site-nav__link">Контакти</a>
+            <li class="auth-nav__contact">
+              <a href="" class="auth-nav__link">
+                <svg class="auth-nav__icon-phone">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-grey-twiter"></use>
+                </svg>+38 096 111 11 11</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="auth-nav list">
-          <li class="auth-nav__contact">
-            <a href="" class="auth-nav__link auth-nav__current">
-              <svg class="auth-nav__icon-mail">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-convert"></use>
-              </svg>info@devstudio.com</a>
-          </li>
-          <li class="auth-nav__contact">
-            <a href="" class="auth-nav__link">
-              <svg class="auth-nav__icon-phone">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-grey-twiter"></use>
-              </svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
+          
+          <ul class="social-nav list">
+            <li class="social-nav__navigation">
+              <a href="" class="social-nav__name">Instagram</a>
+            </li>
+            <li class="social-nav__navigation">
+              <a href="" class="social-nav__name">Twitter</a>
+            </li>
+            <li class="social-nav__navigation">
+              <a href="" class="social-nav__name">Facebook</a>
+            </li>
+            <li class="social-nav__navigation">
+              <a href="" class="social-nav__name">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -116,7 +140,7 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img2b.jpg" alt="basketbool" width="370"/>
+                  <img src="./images/img2b.jpg" alt="basketbool"/>
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -139,7 +163,7 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img3b.jpg" alt="restoranposter" width="370"/>
+                  <img src="./images/img3b.jpg" alt="restoranposter"/>
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -159,7 +183,7 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img4b.jpg" alt="headphone" width="370"/>
+                  <img src="./images/img4b.jpg" alt="headphone"/>
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -179,7 +203,7 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img5b.jpg" alt="boxes" width="370"/>
+                  <img src="./images/img5b.jpg" alt="boxes"/>
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -199,7 +223,7 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img6b.jpg" alt="monitor" width="370"/>
+                  <img src="./images/img6b.jpg" alt="monitor"/>
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -219,7 +243,7 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img7b.jpg" alt="book" width="370"/>
+                  <img src="./images/img7b.jpg" alt="book"/>
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -238,7 +262,7 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img8b.jpg" alt="tag" width="370"/>
+                  <img src="./images/img8b.jpg" alt="tag"/>
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -258,7 +282,7 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img9b.jpg" alt="laptop" width="370"/>
+                  <img src="./images/img9b.jpg" alt="laptop"/>
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -281,59 +305,61 @@
 
     <footer class="footer">
       <div class="bottom conteiner">
-        <div class="bottom__address">
-          <a href="/" class="logo"
-            >Web<span class="studio-logos">Studio</span>
-          </a>
-          <address>
-            <ul class="address-list list">
-              <li class="address-list__contact">
-                <a href="#" class="address-list__footer-address">м. Київ, пр-т Лесі Українки, 26</a>
+        <div class="footer-tablet">
+          <div class="bottom__address">
+            <a href="/" class="logo"
+              >Web<span class="studio-logos">Studio</span>
+            </a>
+            <address>
+              <ul class="address-list list">
+                <li class="address-list__contact">
+                  <a href="#" class="address-list__footer-address">м. Київ, пр-т Лесі Українки, 26</a>
+                </li>
+                <li class="address-list__contact">
+                  <a href="meilto:info@devstudio.com" class="address-list__footer-contact">info@devstudio.com</a>
+                </li>
+                <li class="address-list__contact">
+                  <a href="tell:380961111111" class="address-list__footer-contact">+38 096 111 11 11"</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+  
+          <div class="icon-footer">
+            <p class="icon-footer__tit">Приєднуйтесь</p>
+            <ul class="social-icon list">
+              <li class="social-icon__icons">
+                <a href="" class="social-icon__link">
+                  <svg class="social-icon__ellements" width="20" height="20">
+                    <use class="mini" href="./images/icons.svg/symbol-defs.svg#icon-instagram2"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address-list__contact">
-                <a href="meilto:info@devstudio.com" class="address-list__footer-contact">info@devstudio.com</a>
+  
+              <li class="social-icon__icons">
+                <a href="" class="social-icon__link">
+                  <svg class="social-icon__ellements" width="20" height="16">
+                    <use href="./images/icons.svg/symbol-defs.svg#icon-vector5"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address-list__contact">
-                <a href="tell:380961111111" class="address-list__footer-contact">+38 096 111 11 11"</a>
+  
+              <li class="social-icon__icons">
+                <a href="" class="social-icon__link">
+                  <svg class="social-icon__ellements" width="20" height="20">
+                    <use href="./images/icons.svg/symbol-defs.svg#icon-facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon__icons">
+                <a href="" class="social-icon__link">
+                  <svg class="social-icon__ellements" width="20" height="20">
+                    <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="icon-footer">
-          <p class="icon-footer__tit">Приєднуйтесь</p>
-          <ul class="social-icon list">
-            <li class="social-icon__icons">
-              <a href="" class="social-icon__link">
-                <svg class="social-icon__ellements" width="20" height="20">
-                  <use class="mini" href="./images/icons.svg/symbol-defs.svg#icon-instagram2"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-icon__icons">
-              <a href="" class="social-icon__link">
-                <svg class="social-icon__ellements" width="20" height="16">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-vector5"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-icon__icons">
-              <a href="" class="social-icon__link">
-                <svg class="social-icon__ellements" width="20" height="20">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-facebook1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icon__icons">
-              <a href="" class="social-icon__link">
-                <svg class="social-icon__ellements" width="20" height="20">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="form-send">
@@ -352,5 +378,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

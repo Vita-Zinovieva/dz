@@ -1,9 +1,9 @@
 
 /*Постійні клієнти*/
 .client {
-   margin: 0;
-      padding-bottom: 0px;
-      padding-top: 0px;
+  margin: 0;
+  padding-bottom: 60px;
+  padding-top: 0px;
           
     @media screen and( min-wight: 1200px ){
       padding-bottom: 94px;
@@ -12,31 +12,33 @@
    
   }
   
+  
   .company {
-  /*  display: flex;
-    flex-wrap: nowrap;*/
+   display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    flex-basis: calc((100% - 250px) / 6);
+    flex-basis: calc((100% - 210px) / 6);
     &__icon {
       fill: #afb1b8;
       width: 106px;
       height: 60px;
       padding: 0px;
       transition: fill $cubic-bezier;
-    }
-      @media screen and( min-wight: 480px ){
-        display: none;
-             
-      }
-  
+      text-align: center;
+      justify-content: center;
+     }
+      
       @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: nowrap; 
+        justify-content: center;
+        flex-basis: calc((100% - 210px) / 4);
       }
-      @media screen and( min-wight: 1200px ){
+      @media screen and (min-width: 1200px){
         display: flex;
         flex-wrap: nowrap; 
-       }
+        flex-basis: calc((100% - 250px) / 6);
+        max-height: 92px;
+        
+      }
   }
   
   .company__list-item {
@@ -47,10 +49,13 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 266px;
-    display: none
+    width: 210px;
     transition: border-color $cubic-bezier;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+ 
       &:hover,
       &:focus {
         border-color: $acent-color;
@@ -59,22 +64,35 @@
       &:hover .company__icon,
       &:focus .company__icon {
         fill: $acent-color;
+
         }
  
       @media screen and (min-width: 768px) {
-        width: 266px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
+        max-width: 226px;
+           }
 
       @media screen and (min-width: 1200px) {
-        width: 170px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        max-width: 170px;
+              }
         }
-  }
+
+        .company__list-item:last-child {
+          margin-bottom: 60px; 
+
+          @media screen and (max-width: 1199px) {
+            margin-bottom: 0px;
+           }
+        }
+
+        
+  .client .section-titel {
+    margin-bottom: 30px;
+    margin-top: 60px;}
+
+
+ 
+  
+ 
    
   
   

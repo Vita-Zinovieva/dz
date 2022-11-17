@@ -2,19 +2,44 @@
 /*Переваги. розміщення*/
 .advantage {
   padding-bottom: 0px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px){
+    padding-top: 94px; 
+  }
+    
 }
 
+
 .advantages__list {
+
   @media screen and  (min-width: 768px){ 
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+    .advantages__list:nth-child(2n){
+      padding-right: 0;
+    }
+
   }
+  @media screen and  (min-width: 1200px){ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
   }
   
   .advantages__item {
+    @media screen and  (min-width: 768px){
+      flex-basis: calc((100% - 90px) / 2);
+      justify-content: center;
+    }
+    @media screen and  (min-width: 1200px){
     flex-basis: calc((100% - 90px) / 4);
     justify-content: center;
+  }
   }
      /*Іконки переваг*/
   .advantage__box-item {
@@ -23,17 +48,19 @@
     border-radius: 4px;
     margin-bottom: 30px;
     align-items: center;
-    width: 450px;
+    max-width: 450px;
+    display: flex;
+      justify-content: center;
     
     @media screen and  (min-width: 768px) {
       
-      width: 354px;
+      max-width: 354px;
       display: flex;
       justify-content: center; 
     } 
 
     @media screen and  (min-width: 1200px) {
-      width: 270px;
+      max-width: 270px;
       display: flex;
       justify-content: center; 
     } 

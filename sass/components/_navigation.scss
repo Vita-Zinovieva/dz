@@ -1,10 +1,6 @@
   /* розміщення навігації + підкреслення*/
   .site-nav {
-    @media screen and(min-wight: 1200px){
-    display: flex;
-    margin-right: auto; }
-    }
-  
+   
   &__navigation {
     margin-right: 50px;
     position: relative;
@@ -12,8 +8,13 @@
   
   &__navigation:last-child {
     margin-right: 0px; 
+    
+ @media screen and(min-wight: 1200px){
+    display: flex;
+    margin-right: auto; }
+    }
   }
- /* }*/
+ 
   
   /*Іконики контактів*/
   .auth-nav__icon-mail {
@@ -52,8 +53,6 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     font-weight: 500;
-   /* display: flex;
-    align-items: center;*/
     transition: color $cubic-bezier;
   
   &:hover,
@@ -61,8 +60,23 @@
     color: $acent-color;
   }
 
+    @media screen and(max-width: 480px){
+    .auth-nav__link  {
+      font-size: 24px;
+      line-height: 1.17;
+    }
 
-  @media screen and(min-wight: 1200px){
+  }
+
+  .auth-nav__current{
+    @media screen and(max-widht: 480px) {
+      font-size: 34px;
+      line-height: 1.17;
+    }
+  }
+
+
+  @media screen and(min-widht: 1200px){
     display: flex;
     align-items: center; 
    }
@@ -70,17 +84,45 @@
 
   /* розміщення контактів */
   .auth-nav {
-  @media screen and(min-wight: 1200px) {
+    @media screen and(min-width: 768px){
+    display: block;
+    /* justify-content: center; */
+    text-align: left;
+    /*margin-left: 96px;*/}
+
+  @media screen and(min-width: 1200px) {
     display: flex;
-    margin-left: auto;
+    margin-left: 315px;
+    justify-content: center; 
   } 
 }
    
     .auth-nav__contact {
-    margin-right: 50px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    align-items: center;
+      @media screen and(min-width: 480px) {
+      margin-right: 50px;
+      margin-bottom: 64px;
+      padding-top: 32px;
+      /*padding-top: 24px;
+      padding-bottom: 25px;
+      align-items: center;*/
+    }
+    
+    @media screen and(min-width: 768px) and(max-width: 1199px){
+      align-items: center;
+      padding-bottom: 10px;
+      margin-right: 0px;
+
+     &:last-child {
+       padding: 0px;
+        }
+      }
+
+    @media screen and(min-width: 1200px){
+      margin-right: 30px;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      }
   }
   
   .auth-nav__contact:last-child {

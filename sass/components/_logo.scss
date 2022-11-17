@@ -1,14 +1,31 @@
 .logo {
-    display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-    text-decoration: none;
+    
+    /*padding-top: 24px;*/
     color: $acent-color;
     font-family: Raleway, sans-serif;
     text-decoration: none;
     font-size: 26px;
     line-height: 1.15;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 0.7;
+      margin-right: 68px;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+      /*padding-bottom: 25px;*/
+      display: flex;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+
   }
   
 .studio-logo {
@@ -17,6 +34,11 @@
     text-decoration: none;
     font-size: 26px;
     line-height: 1.15;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 0.7;
+    }
+
   }
   
   .studio-logos {
@@ -25,4 +47,13 @@
     text-decoration: none;
     font-size: 26px;
     line-height: 1.15;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 0.7;
+    }
   }
+
+ 
+  
+  
+  

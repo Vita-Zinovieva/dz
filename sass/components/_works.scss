@@ -1,19 +1,24 @@
 
 /*Чим ми займаємося. розміщення + тумба знаписом*/
+.examples {
+  @media screen and (max-width:1199px) {
+    display: none;
+      }
+}
+
 .card-list {
-  @media screen and (min-width:1200px) {
+  
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
     gap: 30px;
-  } }
+   }
   
   .card-list__card {
-    @media screen and (min-width:1200px){
     display: flex;
     flex-wrap: wrap;
     position: relative;
-  } }
+   }
   
   .card-list-list {
     flex-basis: calc(100% - 90px) / 3;
@@ -31,10 +36,9 @@
       rgba(47, 48, 58, 0.8)
     );
     text-align: center;
-    @media screen and (min-width:1200px){
-    display: flex;
+     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
   }
   
   
@@ -43,11 +47,26 @@
 /*Портфоліо, наші роботи, розміщення + блакитний оверлей*/
 
 .example-list {
-   /* display: flex;
-    flex-wrap: wrap;*/
+  
     padding: 0px;
-    margin-top: 56px;
-    gap: 30px;
+    margin-top: 40px;
+    
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+
+      
+        }
+  
+
+    @media screen and (min-width:1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 56px;
+        }
   }
   
   .content {
@@ -57,9 +76,16 @@
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
-    flex-basis: calc(100% - 60px) / 3;
+    
     margin-top: 0px;
     text-decoration: none;
+
+    @media screen and (min-width:1200px) {
+      flex-basis: calc(100% - 60px) / 3;
+
+        }
+
+
   }
   .work {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,14 +101,36 @@
   
   .tumba {
     position: relative;
-    width: 370px;
+    width: 450px;
     height: 294px;
     overflow: hidden;
+    
+    @media screen and (min-width:768px) {
+      width: 354px;
+        }
+
+    @media screen and (min-width:1200px) {
+      width: 370px;
+        }
+
+
   }
   
   .work {
     position: relative;
     overflow: hidden;
+    margin-bottom: 0px;
+
+    @media screen and (min-width:768px) {
+    .work:last-child{
+      margin-bottom: 0px;
+    }
+  }
+
+    @media screen and (min-width:1200px) {
+      margin-bottom: 0px;
+        }
+
   }
   .tumba__overlay {
     content: " ";
