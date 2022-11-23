@@ -13,7 +13,7 @@
     });
   })();
 
-/* файл 2*/
+/* файл 2
 
   (() => {
     const mobileMenu = document.querySelector('.js-menu-container');
@@ -42,3 +42,4 @@
       bodyScrollLock.enableBodyScroll(document.body);
     });
   })();
+  */

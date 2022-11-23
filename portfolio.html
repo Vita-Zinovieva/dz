@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet"
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css" />
 
-    <link rel="stylesheet" href="./css/main.min.css"/>
-
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body class="page">
     <header class="page-header">
       <div class="conteiner">
-        <a href="./index.html" class="logo">Web<span class="studio-logo">Studio</span></a>
+        <a href="./index.html" class="logo"
+          >Web<span class="studio-logo">Studio</span></a
+        >
 
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
           <svg width="40" height="40" aria-label="Перемикач мобильного меню">
-            <use class="icon-cross" href="./images/icons4.svg/symbol-defs.svg#icon-cross"></use>
-            <use class="icon-menu" href="./images/icons4.svg/symbol-defs.svg#icon-menu"></use>
+            <use
+              class="icon-cross"
+              href="./images/icons4.svg/symbol-defs.svg#icon-cross"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/icons4.svg/symbol-defs.svg#icon-menu"
+            ></use>
           </svg>
         </button>
 
@@ -43,29 +60,39 @@
                 <a href="./index.html" class="site-nav__link">Студія</a>
               </li>
               <li class="site-nav__navigation">
-                <a href="./portfolio.html" class="site-nav__link site-nav__current">Портфоліо</a>
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link site-nav__current"
+                  >Портфоліо</a
+                >
               </li>
               <li class="navigation">
                 <a href="" class="site-nav__link">Контакти</a>
               </li>
             </ul>
           </nav>
-  
+
           <ul class="auth-nav list">
             <li class="auth-nav__contact">
               <a href="" class="auth-nav__link auth-nav__current">
                 <svg class="auth-nav__icon-mail">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-convert"></use>
-                </svg>info@devstudio.com</a>
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-convert"
+                  ></use></svg
+                >info@devstudio.com</a
+              >
             </li>
             <li class="auth-nav__contact">
               <a href="" class="auth-nav__link">
                 <svg class="auth-nav__icon-phone">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-grey-twiter"></use>
-                </svg>+38 096 111 11 11</a>
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-grey-twiter"
+                  ></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-          
+
           <ul class="social-nav list">
             <li class="social-nav__navigation">
               <a href="" class="social-nav__name">Instagram</a>
@@ -119,7 +146,26 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img1b.jpg" alt="netbook"/>
+                  <img
+                    srcset="
+                      ./images/mobile/portfolio1-450.jpg 1x,
+                      ./images/mobile/portfolio1-900.jpg 2x
+                    "
+                    src="./images/mobile/portfolio-450.jpg"
+                    alt="netbook"
+                    srcset="
+                      ./images/tablet/portfolio1-354.jpg 1x,
+                      ./images/tablet/portfolio1-708.jpg 2x
+                    "
+                    src="./images/tablet/portfolio1-354.jpg"
+                    alt="netbook"
+                    srcset="
+                      ./images/comp/portfolio1-370.jpg 1x,
+                      ./images/comp/portfolio1-740.jpg 2x
+                    "
+                    src="./images/comp/portfolio1-370.jpg"
+                    alt="netbook"
+                  />
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -140,7 +186,26 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img2b.jpg" alt="basketbool"/>
+                  <img
+                    srcset="
+                      ./images/mobile/portfolio2-450.jpg 1x,
+                      ./images/mobile/portfolio2-900.jpg 2x
+                    "
+                    src="./images/mobile/portfolio2-450.jpg"
+                    alt="basketbool"
+                    srcset="
+                      ./images/tablet/portfolio2-354.jpg 1x,
+                      ./images/tablet/portfolio2-708.jpg 2x
+                    "
+                    src="./images/tablet/portfolio2-354.jpg"
+                    alt="basketbool"
+                    srcset="
+                      ./images/comp/portfolio2-370.jpg 1x,
+                      ./images/comp/portfolio2-740.jpg 2x
+                    "
+                    src="./images/comp/portfolio2-370.jpg"
+                    alt="basketbool"
+                  />
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -163,7 +228,26 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img3b.jpg" alt="restoranposter"/>
+                  <img
+                    srcset="
+                      ./images/mobile/portfolio3-450.jpg 1x,
+                      ./images/mobile/portfolio3-900.jpg 2x
+                    "
+                    src="./images/mobile/portfolio3-450.jpg"
+                    alt="restoranposter"
+                    srcset="
+                      ./images/tablet/portfolio3-354.jpg 1x,
+                      ./images/tablet/portfolio3-708.jpg 2x
+                    "
+                    src="./images/tablet/portfolio3-354.jpg"
+                    alt="restoranposter"
+                    srcset="
+                      ./images/comp/portfolio3-370.jpg 1x,
+                      ./images/comp/portfolio3-740.jpg 2x
+                    "
+                    src="./images/comp/portfolio3-370.jpg"
+                    alt="restoranposter"
+                  />
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -183,7 +267,26 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img4b.jpg" alt="headphone"/>
+                  <img
+                    srcset="
+                      ./images/mobile/portfolio4-450.jpg 1x,
+                      ./images/mobile/portfolio4-900.jpg 2x
+                    "
+                    src="./images/mobile/portfolio4-450.jpg"
+                    alt="headphone"
+                    srcset="
+                      ./images/tablet/portfolio4-354.jpg 1x,
+                      ./images/tablet/portfolio4-708.jpg 2x
+                    "
+                    src="./images/tablet/portfolio4-354.jpg"
+                    alt="headphone"
+                    srcset="
+                      ./images/comp/portfolio4-370.jpg 1x,
+                      ./images/comp/portfolio4-740.jpg 2x
+                    "
+                    src="./images/comp/portfolio4-370.jpg"
+                    alt="headphone"
+                  />
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -203,7 +306,26 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img5b.jpg" alt="boxes"/>
+                  <img
+                    srcset="
+                      ./images/mobile/portfolio5-450.jpg 1x,
+                      ./images/mobile/portfolio5-900.jpg 2x
+                    "
+                    src="./images/mobile/portfolio5-450.jpg"
+                    alt="boxes"
+                    srcset="
+                      ./images/tablet/portfolio5-354.jpg 1x,
+                      ./images/tablet/portfolio5-708.jpg 2x
+                    "
+                    src="./images/tablet/portfolio5-354.jpg"
+                    alt="boxes"
+                    srcset="
+                      ./images/comp/portfolio5-370.jpg 1x,
+                      ./images/comp/portfolio5-740.jpg 2x
+                    "
+                    src="./images/comp/portfolio5-370.jpg"
+                    alt="boxes"
+                  />
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -223,7 +345,26 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img6b.jpg" alt="monitor"/>
+                  <img
+                    srcset="
+                      ./images/mobile/portfolio6-450.jpg 1x,
+                      ./images/mobile/portfolio6-900.jpg 2x
+                    "
+                    src="./images/mobile/portfolio6-450.jpg"
+                    alt="monitor"
+                    srcset="
+                      ./images/tablet/portfolio6-354.jpg 1x,
+                      ./images/tablet/portfolio6-708.jpg 2x
+                    "
+                    src="./images/tablet/portfolio6-354.jpg"
+                    alt="monitor"
+                    srcset="
+                      ./images/comp/portfolio6-370.jpg 1x,
+                      ./images/comp/portfolio6-740.jpg 2x
+                    "
+                    src="./images/comp/portfolio6-370.jpg"
+                    alt="monitor"
+                  />
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -243,7 +384,26 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img7b.jpg" alt="book"/>
+                  <img
+                    srcset="
+                      ./images/mobile/portfolio7-450.jpg 1x,
+                      ./images/mobile/portfolio7-900.jpg 2x
+                    "
+                    src="./images/mobile/portfolio7-450.jpg"
+                    alt="book"
+                    srcset="
+                      ./images/tablet/portfolio7-354.jpg 1x,
+                      ./images/tablet/portfolio7-708.jpg 2x
+                    "
+                    src="./images/tablet/portfolio7-354.jpg"
+                    alt="book"
+                    srcset="
+                      ./images/comp/portfolio7-370.jpg 1x,
+                      ./images/comp/portfolio7-740.jpg 2x
+                    "
+                    src="./images/comp/portfolio7-370.jpg"
+                    alt="book"
+                  />
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -262,7 +422,26 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img8b.jpg" alt="tag"/>
+                  <img
+                    srcset="
+                      ./images/mobile/portfolio8-450.jpg 1x,
+                      ./images/mobile/portfolio8-900.jpg 2x
+                    "
+                    src="./images/mobile/portfolio8-450.jpg"
+                    alt="tag"
+                    srcset="
+                      ./images/tablet/portfolio8-354.jpg 1x,
+                      ./images/tablet/portfolio8-708.jpg 2x
+                    "
+                    src="./images/tablet/portfolio8-354.jpg"
+                    alt="tag"
+                    srcset="
+                      ./images/comp/portfolio8-370.jpg 1x,
+                      ./images/comp/portfolio8-740.jpg 2x
+                    "
+                    src="./images/comp/portfolio8-370.jpg"
+                    alt="netbook"
+                  />
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -282,7 +461,26 @@
             <li class="work">
               <a href="" class="work__foto">
                 <div class="tumba">
-                  <img src="./images/img9b.jpg" alt="laptop"/>
+                  <img
+                    srcset="
+                      ./images/mobile/portfolio9-450.jpg 1x,
+                      ./images/mobile/portfolio9-900.jpg 2x
+                    "
+                    src="./images/mobile/portfolio9-450.jpg"
+                    alt="laptop"
+                    srcset="
+                      ./images/tablet/portfolio9-354.jpg 1x,
+                      ./images/tablet/portfolio9-708.jpg 2x
+                    "
+                    src="./images/tablet/portfolio9-354.jpg"
+                    alt="laptop"
+                    srcset="
+                      ./images/comp/portfolio9-370.jpg 1x,
+                      ./images/comp/portfolio9-740.jpg 2x
+                    "
+                    src="./images/comp/portfolio9-370.jpg"
+                    alt="laptop"
+                  />
                   <div class="tumba__overlay">
                     <p class="tumba__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -313,48 +511,67 @@
             <address>
               <ul class="address-list list">
                 <li class="address-list__contact">
-                  <a href="#" class="address-list__footer-address">м. Київ, пр-т Лесі Українки, 26</a>
+                  <a href="#" class="address-list__footer-address"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
                 </li>
                 <li class="address-list__contact">
-                  <a href="meilto:info@devstudio.com" class="address-list__footer-contact">info@devstudio.com</a>
+                  <a
+                    href="meilto:info@devstudio.com"
+                    class="address-list__footer-contact"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="address-list__contact">
-                  <a href="tell:380961111111" class="address-list__footer-contact">+38 096 111 11 11"</a>
+                  <a
+                    href="tell:380961111111"
+                    class="address-list__footer-contact"
+                    >+38 096 111 11 11"</a
+                  >
                 </li>
               </ul>
             </address>
           </div>
-  
+
           <div class="icon-footer">
             <p class="icon-footer__tit">Приєднуйтесь</p>
             <ul class="social-icon list">
               <li class="social-icon__icons">
                 <a href="" class="social-icon__link">
                   <svg class="social-icon__ellements" width="20" height="20">
-                    <use class="mini" href="./images/icons.svg/symbol-defs.svg#icon-instagram2"></use>
+                    <use
+                      class="mini"
+                      href="./images/icons.svg/symbol-defs.svg#icon-instagram2"
+                    ></use>
                   </svg>
                 </a>
               </li>
-  
+
               <li class="social-icon__icons">
                 <a href="" class="social-icon__link">
                   <svg class="social-icon__ellements" width="20" height="16">
-                    <use href="./images/icons.svg/symbol-defs.svg#icon-vector5"></use>
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-vector5"
+                    ></use>
                   </svg>
                 </a>
               </li>
-  
+
               <li class="social-icon__icons">
                 <a href="" class="social-icon__link">
                   <svg class="social-icon__ellements" width="20" height="20">
-                    <use href="./images/icons.svg/symbol-defs.svg#icon-facebook1"></use>
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-facebook1"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li class="social-icon__icons">
                 <a href="" class="social-icon__link">
                   <svg class="social-icon__ellements" width="20" height="20">
-                    <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin1"></use>
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-linkedin1"
+                    ></use>
                   </svg>
                 </a>
               </li>
@@ -366,11 +583,13 @@
           <form class="forma">
             <p class="forma__footer-tit">Підпишіться на розсилку</p>
             <label for="mail"></label>
-            <input type="email" name="mail" id="mail" placeholder="E-mail"/>
+            <input type="email" name="mail" id="mail" placeholder="E-mail" />
             <button type="submit" class="forma__buttonmail">
               Підписатися
               <svg class="forma__icon-send" width="24" height="24">
-                <use href="./images/icons3.svg/symbol-defs.svg#icon-icon-send"></use>
+                <use
+                  href="./images/icons3.svg/symbol-defs.svg#icon-icon-send"
+                ></use>
               </svg>
             </button>
           </form>

@@ -1,57 +1,64 @@
 .logo {
-    
-    /*padding-top: 24px;*/
-    color: $acent-color;
-    font-family: Raleway, sans-serif;
-    text-decoration: none;
-    font-size: 26px;
-    line-height: 1.15;
+ 
+  color: $acent-color;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.15;
+  
+  @media screen and (min-width: 480px) {
     margin-top: 16px;
     margin-bottom: 16px;
-    margin-right: auto;
-
-    @media screen and (min-width: 768px) {
-      font-size: 24px;
-      line-height: 0.7;
-      margin-right: 68px;
-    }
-
-
-    @media screen and (min-width: 1200px) {
-      margin-right: 93px;
-      /*padding-bottom: 25px;*/
-      display: flex;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
-
+         
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-right: 88px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-left: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.17;
+    font-weight: 700;
+    margin-right: 93px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+
+    margin-left: 215px;
+    padding: 0px;
+  }
+}
   
 .studio-logo {
-    color: $title-text-color;
-    font-family: $logo-font;
-    text-decoration: none;
-    font-size: 26px;
-    line-height: 1.15;
-    @media screen and (min-width: 768px) {
-      font-size: 24px;
-      line-height: 0.7;
-    }
+  color: $title-text-color;
+  font-family: $logo-font;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.15;
 
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
   }
+} 
   
-  .studio-logos {
-    color: $acent-white-color;
-    font-family: $logo-font;
-    text-decoration: none;
-    font-size: 26px;
-    line-height: 1.15;
-    @media screen and (min-width: 768px) {
-      font-size: 24px;
-      line-height: 0.7;
-    }
+.studio-logos {
+  color: $acent-white-color;
+  font-family: $logo-font;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.17;
+  
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
   }
+}
 
  
   

@@ -1,340 +1,343 @@
 
 /*Форма відправки*/
 .forma {
-    text-align: center;
+  text-align: center;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
    
-    @media screen and (min-width: 1200px){
-      width: 570px;
-      /*margin-left: 93px;*/
-    }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    /*margin-left: 93px;*/
   }
+}
 
 .form-send {
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     display: flex;
-      }
+    align-items: center 
+  }
 }
     
-  .forma__buttonmail {
-    display: inline-flex;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    padding-top: 10px;
-    padding-left: 28px;
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    cursor: pointer;
-    border-radius: 4px;
-    border: none;
-    background: $acent-color;
-    color: $acent-white-color;
-     }
+.forma__buttonmail {
+  display: inline-flex;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 28px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  background: $acent-color;
+  color: $acent-white-color;
+}
   
-  .forma__icon-send {
-    margin-left: 10px;
+.forma__icon-send {
+  margin-left: 10px;
+}
+  
+.form-send input {
+  width: 450px;
+  height: 50px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-color: rgba(255, 255, 255, 0.3);
+  background: #2f303a;
+  transition: border-color $cubic-bezier;
+  color: $secodary-button-color;
+  
+  @media screen and (min-width: 1200px) {
+    max-width: 358px;
   }
+}
   
-  .form-send input {
-    width: 450px;
-    height: 50px;
-    border-radius: 4px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    border-color: rgba(255, 255, 255, 0.3);
-    background: #2f303a;
-    transition: border-color $cubic-bezier;
-    color: $secodary-button-color;
-    
-    @media screen and (min-width: 1200px){
-      max-width: 358px;
-      }
-  }
+.form-send input:hover,
+.form-send input:focus {
+  border-color: $acent-color;
+}
   
-  .form-send input:hover,
-  .form-send input:focus {
-    border-color: $acent-color;
-  }
-  
-  .form-send input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
+.form-send input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
   /*Модальне вікно*/
-  .backdrop {
+.backdrop {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 609px;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  overflow-y: scroll;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+  justify-content: center;
+  align-items: center;
+  transition: opasity $cubic-bezier;
+
+  @media screen and (min-widht: 1200px) {
+    height: 528px;
+  }
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  @media screen and (min-widht: 768px) {
     display: flex;
-    position: fixed;
-    width: 100%;
-    height: 609px;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    overflow-y: scroll;
-    background-image: linear-gradient(
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    );
-    justify-content: center;
-    align-items: center;
-    transition: opasity $cubic-bezier;
+  }
+}
 
-    @media screen and (min-widht: 1200px) {
-      height: 528px;
-    }
-  }
-  .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+.modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+  
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  min-width: 450px;
+  min-height: 609px;
+  background-color: $primery-background-color;
+  /* justify-content: center;
+  align-items: center;*/
+  padding: 15px;
+  transition: transfore $cubic-bezier;
 
-    @media screen and (min-widht:768px) {
-      display: flex;
-    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    max-width: 528px;
+    max-height: 581px;
   }
-  
-  .modal {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
-  
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    min-width: 450px;
-    min-height: 609px;
-    background-color: $primery-background-color;
-   /* justify-content: center;
-    align-items: center;*/
-    padding: 15px;
-    transition: transfore $cubic-bezier;
 
-    @media screen and (min-width: 1200px){
-      display: flex;
-      max-width: 528px;
-      max-height: 581px;
-    }
+}
+  
+.modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: $primery-background-color;
+  border: transparent;
+  cursor: pointer;
+}
 
-  }
+.modal__icon-close {
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  transition: transfore $cubic-bezier;
+}
   
-  .modal__button-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    justify-content: center;
-    align-items: center;
-    background-color: $primery-background-color;
-    border: transparent;
-    cursor: pointer;
-  }
-  
-  .modal__icon-close {
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    transition: transfore $cubic-bezier;
-  }
-  
-  .modal__icon-close:hover,
-  .modal__icon-close:focus {
-    fill: $acent-color;
-  }
+.modal__icon-close:hover,
+.modal__icon-close:focus {
+  fill: $acent-color;
+}
   
   /*Форма модалки*/
-  .modal__form {
-    position: absolute;
-    top: auto;
-    right: auto;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    max-width: 370px;
-    margin-left: auto;
-    margin-right: auto;
-    
-
-    @media screen and(min-width:1200px){
-      max-width: 448px;
-      }
-  }
+.modal__form {
+  position: absolute;
+  top: auto;
+  right: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
   
-  .modal__button-form {
-    width: 200px;
-    height: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: $main-font;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    cursor: pointer;
-    border-radius: 4px;
-    border: none;
-    background: $acent-color;
-    color: $acent-white-color;
-    margin-bottom: 40px;
-    margin-left: 100px;
 
-    @media screen and(min-width:1200px){
-      margin-left: 124px;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 448px;
   }
+}
+  
+.modal__button-form {
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  background: $acent-color;
+  color: $acent-white-color;
+  margin-bottom: 40px;
+  margin-left: 100px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 124px;
+  }
+}
     
-  .modal__part-form {
+.modal__part-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+  height: 58px;
+
+  @media screen and (min-widht: 1200px) {
+    display: flex;
+  }
+}
+  
+.modal__part-form input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  border-radius: 4px;
+  border-color: rgba(33, 33, 33, 0.2);
+  height: 40px;
+}
+
+.modal__input-form:focus,
+.modal__input-form:hover {
+  border-color: $acent-color;
+}
+
+.modal__input-form {
+  transition: background-color $cubic-bezier;
+  cursor: pointer;
+}
+
+.modal__part-form label {
+  margin-bottom: 4px;
+}
+
+.modal__option input[type="checkbox"] {
+  width: 16px;
+  height: 15px;
+}
+
+.modal__option {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+}
+
+.modal__option label {
+  font-size: 12px;
+}
+
+.contract {
+  color: $acent-color;
+  text-decoration: underline;
+}
+  
+.modal__form-comment {
+  
+  margin-bottom: 10px;
+  position: relative;
+
+  @media screen and (min-widht:768px) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    position: relative;
-    height: 58px;
+  }
+}
+  
+.modal__comment {
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+  padding: 12px 16px 12px 16px;
+  min-width: 370px;
+  height: 120px;
+  border-color: rgba(33, 33, 33, 0.2);
+  transition: border-color $cubic-bezier;
+  cursor: pointer;
 
-    @media screen and (min-widht: 1200px) {
-      display: flex;
-    }
-   }
-  
-  .modal__part-form input {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 42px;
-    border-radius: 4px;
-    border-color: rgba(33, 33, 33, 0.2);
-    height: 40px;
+  @media screen and (min-width: 1200px) {
+    min-width: 448px;
   }
+}
   
-  .modal__input-form:hover,
-  .modal__input-form:focus {
-    border-color: $acent-color;
-  }
+.modal__comment {
+  color: $primery-text-color;
+}
 
-  .modal__input-form {
-    transition: background-color $cubic-bezier;
-    cursor: pointer;
-  }
-  
-  .modal__part-form label {
-    margin-bottom: 4px;
-  }
-  
-  .modal__option input[type="checkbox"] {
-    width: 16px;
-    height: 15px;
-  }
+textarea {
+  resize: none;
+}
 
-  .modal__option {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    display: block;
-    text-align: center;
-  }
+.modal__comment:hover,
+.modal__comment:focus {
+  border-color: $acent-color;
+}
   
-  .modal__option label {
-    font-size: 12px;
-  }
+.modal__form-comment textarea {
+  padding-top: 11px;
+  padding-left: 12px;
+  border-radius: 4px;
+}
   
-  .contract {
-    color: $acent-color;
-    text-decoration: underline;
-  }
+.modal__checkbox {
+  /*appearance: none;
+  position: absolute;*/
+  cursor: pointer;
   
-  .modal__form-comment {
-    
-    margin-bottom: 10px;
-    position: relative;
+}
 
-    @media screen and (min-widht:768px) {
-      display: flex;
-      flex-direction: column;
-    }
-  }
+.checkbox:checked + .modal__icon-checkbox {
+  background-color: $acent-color;
+  border: 2px solid $acent-color;
+}
   
-  .modal__comment {
-    font-size: 12px;
-    color: rgba(117, 117, 117, 0.5);
-    padding: 12px 16px 12px 16px;
-    max-width: 370px;
-    height: 120px;
-    border-color: rgba(33, 33, 33, 0.2);
-    transition: border-color $cubic-bezier;
-    cursor: pointer;
+modal__icon-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title-text-color;
+  border-radius: 4px;
+  margin-right: 8px;
+}
 
-    @media screen and(min-width:1200px){
-      max-width: 448px;
-      }
-  }
-  
-  .modal__comment {
-    color: $primery-text-color;
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  .modal__comment:hover,
-  .modal__comment:focus {
-    border-color: $acent-color;
-  }
-  
-  .modal__form-comment textarea {
-    padding-top: 11px;
-    padding-left: 12px;
-    border-radius: 4px;
-  }
-  
-  .modal__checkbox {
-   /*appearance: none;*/
-    position: absolute;
-    cursor: pointer;
-    
-  }
-  
-  .checkbox:checked + .modal__icon-checkbox {
-    background-color: $acent-color;
-    border: 2px solid $acent-color;
-  }
-  
-  .modal__icon-checkbox {
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    border: 2px solid $title-text-color;
-    border-radius: 4px;
-    margin-right: 8px;
-    background-size: contain;
-    background-origin: border-box;
-    background-image: url("../images/icon check.svg");
-    
-  }
+.modal__icon-checkbox {
+  background-image: url("../images/icon check.svg");
+  background-size: contain;
+  background-origin: border-box;
+}
    
-  .modal__input-form:focus ~ .modal__iconame,
-  .modal__input-form:focus ~ .modal__icotel,
-  .modal__input-form:focus ~ .modal__iconemail,
-  .modal__input-form:hover ~ .modal__iconame,
-  .modal__input-form:hover ~ .modal__icotel,
-  .modal__input-form:hover ~ .modal__iconemail {
-    fill: $acent-color;
-  }
+.modal__input-form:focus ~ .modal__iconame,
+.modal__input-form:focus ~ .modal__icotel,
+.modal__input-form:focus ~ .modal__iconemail,
+.modal__input-form:hover ~ .modal__iconame,
+.modal__input-form:hover ~ .modal__icotel,
+.modal__input-form:hover ~ .modal__iconemail {
+  fill: $acent-color;
+}
   
-  .modal__iconemail,
-  .modal__icotel,
-  .modal__iconame {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    left: 12px;
-    bottom: 11px;
-    display: inline-block;
-    fill: $title-text-color;
-    text-align: center;
-  }
+.modal__iconemail,
+.modal__icotel,
+.modal__iconame {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  display: inline-block;
+  fill: $title-text-color;
+  text-align: center;
+}
   
