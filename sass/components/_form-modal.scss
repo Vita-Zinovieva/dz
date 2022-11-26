@@ -88,7 +88,7 @@
   align-items: center;
   transition: opasity $cubic-bezier;
 
-  @media screen and (min-widht: 1200px) {
+  @media screen and (min-width: 1200px) {
     height: 528px;
   }
 }
@@ -97,7 +97,7 @@
   opacity: 0;
   pointer-events: none;
 
-  @media screen and (min-widht: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
@@ -198,7 +198,7 @@
   position: relative;
   height: 58px;
 
-  @media screen and (min-widht: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -252,7 +252,7 @@
   margin-bottom: 10px;
   position: relative;
 
-  @media screen and (min-widht:768px) {
+  @media screen and (min-width:768px) {
     display: flex;
     flex-direction: column;
   }

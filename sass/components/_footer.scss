@@ -108,20 +108,20 @@
   
 .bottom {
   &__address {
-  @media screen and (max-widht: 768px) {
+  @media screen and (max-width: 768px) {
     margin-bottom: 60px;
     margin-right: 124px;
     margin-left: 124px;
     min-width: 232px;
   }
     
-    @media screen and (min-widht: 768px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       align-items: baseline;
       margin-left: 76px;
     }
 
-    @media screen and (min-widht: 1200px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
       align-items: baseline;
       margin-right: 70px;
@@ -129,7 +129,7 @@
   }
 }
            
-@media screen and (min-widht: 768px) {
+@media screen and (min-width: 768px) {
   .bottom_address { 
     margin-bottom: 60px;
     margin-right: 0px;
@@ -236,7 +236,7 @@
     background-color: $acent-color;
   }
   
-  @media screen and (min-widht:768px) {
+  @media screen and (min-width:768px) {
   display: flex;
   justify-content: center;
   align-items: center;

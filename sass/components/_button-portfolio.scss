@@ -53,25 +53,18 @@
   margin-bottom: 15px;
 }
 
-
 .button__wight-button:nth-child(3){
   margin-right: 39px;
-}
-  
- /*@media screen and  (min-width: 1200px) { 
-    .button__wight-button:first-child  {
-    margin-left: 96px;
-  }
-  }*/
-
-@media screen and  (min-width: 1200px) { 
-  .button__wight-button:first-child {
-    margin-left: 297px;
-  }
 }
 
 @media screen and  (min-width: 768px) { 
   .button__wight-button:nth-child(3){
   margin-right: 8px;
+  }
+}  
+ 
+@media screen and  (min-width: 1200px) { 
+  .button__wight-button:first-child {
+    margin-left: 297px;
   }
 }
