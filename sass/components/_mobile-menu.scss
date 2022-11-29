@@ -45,8 +45,8 @@
 .menu-button .icon-menu:focus {
   color: $acent-color;
 }
-
-/*.menu-container {
+/*
+.menu-container {
   position: fixed;
   top: 0%;
   left: 0;
@@ -61,8 +61,8 @@
 
 .menu-container.is-open{
   transform: translateX(0);
-}*/
-
+}}
+*/
 .menu-container {
   @media screen and (max-width: 767px) {
     background-color: $primery-background-color;
@@ -70,7 +70,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 100vw;/* було 100%*/
     padding: 0px;
     max-width: auto;
 

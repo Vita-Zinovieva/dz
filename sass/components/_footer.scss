@@ -56,7 +56,8 @@
     
   @media screen and(min-width: 1200px) {
     text-align: start;
-    margin-right: 30px;
+    margin-right: 0px;
+    margin-left: 0;
   }
 }
 
@@ -108,23 +109,22 @@
   
 .bottom {
   &__address {
-  @media screen and (max-width: 768px) {
+    
+    @media screen and (max-width: 768px) {
     margin-bottom: 60px;
-    margin-right: 124px;
-    margin-left: 124px;
     min-width: 232px;
   }
     
     @media screen and (min-width: 768px) {
-      display: flex;
       align-items: baseline;
       margin-left: 76px;
     }
 
     @media screen and (min-width: 1200px) {
-      display: flex;
+      display: block;
       align-items: baseline;
-      margin-right: 70px;
+      margin-right: 94px;
+      margin-left: 0;
     }
   }
 }
@@ -134,7 +134,7 @@
     margin-bottom: 60px;
     margin-right: 0px;
     margin-left: 76px;
-    min-width: auot;
+    min-width: auto;
   }
 }
   
@@ -164,7 +164,7 @@
   }
 
   @media screen and (min-width: 1200px){
-    margin-left: 75px;
+    margin-left: 0px;
    
   }
 }
@@ -191,7 +191,7 @@
   @media screen and (min-width: 1200px)  {
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-right: 60px;
+    margin-right: 94px;
   }
 }
   

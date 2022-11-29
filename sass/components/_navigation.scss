@@ -197,10 +197,11 @@
 
 .auth-nav__contact {
   @media screen and (min-width: 1200px) {
-    margin-right: 40px;
+    /*margin-right: 40px;*/
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+   
   }
 
   .auth-nav__contact:nth-child(2) {
@@ -208,7 +209,13 @@
     padding-top: 32px;
   }
 }
-  
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__contact:first-child {
+      margin-right: 40px;
+  }
+}
+
 
 /* хедер+site-nav */
 
@@ -222,7 +229,7 @@
   height: 4px;
   border-radius: 2px;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 480px) {
     display: none;
   }
 
@@ -345,6 +352,7 @@
     display: flex;
     margin-top: 32px;
     margin-bottom: 32px;
+    margin-right: 305px;
     
     &__navigation {
       margin-right: 50px;

@@ -2,6 +2,8 @@
 /*Форма відправки*/
 .forma {
   text-align: center;
+  max-height: 156px;
+  
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
@@ -10,6 +12,7 @@
   }
    
   @media screen and (min-width: 1200px) {
+    max-height: 86px;
     width: 570px;
     /*margin-left: 93px;*/
   }
@@ -17,18 +20,27 @@
 
 .form-send {
   @media screen and (min-width: 1200px) {
-    display: flex;
+    /*display: flex;*/
     align-items: center 
+  }
+}
+
+.form-forma {
+  display: block;
+  @media screen and (min-width: 1200px) {
+   display: flex;
+   margin-top: 20px;
   }
 }
     
 .forma__buttonmail {
   display: inline-flex;
   justify-content: center;
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   padding-top: 10px;
   padding-left: 28px;
+  padding-right: 28px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -55,9 +67,14 @@
   background: #2f303a;
   transition: border-color $cubic-bezier;
   color: $secodary-button-color;
+
   
   @media screen and (min-width: 1200px) {
     max-width: 358px;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 12px;
   }
 }
   

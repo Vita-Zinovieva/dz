@@ -59,7 +59,11 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 480px;
+}
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
@@ -75,6 +79,7 @@ body {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -114,7 +119,6 @@ body {
     margin-right: 93px;
     margin-top: 24px;
     margin-bottom: 25px;
-    margin-left: 215px;
     padding: 0px;
   }
 }
@@ -331,7 +335,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .auth-nav__contact {
-    margin-right: 40px;
+    /*margin-right: 40px;*/
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -342,6 +346,11 @@ body {
   padding-top: 32px;
 }
 
+@media screen and (min-width: 1200px) {
+  .auth-nav__contact:first-child {
+    margin-right: 40px;
+  }
+}
 /* хедер+site-nav */
 .site-nav__current::after {
   position: absolute;
@@ -352,7 +361,7 @@ body {
   height: 4px;
   border-radius: 2px;
 }
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .site-nav__current::after {
     display: none;
   }
@@ -468,6 +477,7 @@ body {
     display: flex;
     margin-top: 32px;
     margin-bottom: 32px;
+    margin-right: 305px;
   }
   .site-nav__navigation {
     margin-right: 50px;
@@ -483,6 +493,7 @@ body {
   margin-left: auto;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 118px;
   padding-bottom: 118px;
   width: 480px;
@@ -495,7 +506,7 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/header-900.jpg);
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 481px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -505,12 +516,12 @@ body {
     background-size: 768px 400px;
   }
 }
-@media screen and (min-width: 767px) and (min-devise-pixel-ratino: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (min-devise-pixel-ratino: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/header-1536.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -520,12 +531,69 @@ body {
     background-size: 1600px 600px;
   }
 }
-@media screen and (min-width: 1200px) and (min-devise-pixel-ratino: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-devise-pixel-ratino: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comp/header-3200.jpg);
   }
 }
 
+/*.hero {
+  background-color: $title-text-color;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 1600px;
+
+  @media screen and (max-width: 480px) {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/mobile/header-480.jpg);
+
+  @media screen and (min-devise-pixel-ratino:2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/mobile/header-900.jpg);
+  }
+}
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+  url(../images/tablet/header-768.jpg);
+
+    @media screen and (min-devise-pixel-ratino:2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url(../images/tablet/header-1536.jpg);
+      }
+    }
+
+  @media screen and (min-width: 769px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /*height: 600px;*/
+/*background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/comp/header-1600.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+        url(../images/comp/header-3200.jpg);
+    }
+  }
+
+}*/
 .hero__titel {
   text-align: center;
   margin-bottom: 30px;
@@ -797,8 +865,8 @@ body {
 /*тумба*/
 .tumba {
   position: relative;
-  width: 450px;
-  height: 294px;
+  max-width: 450px;
+  /*height: 294px;*/
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
@@ -959,7 +1027,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-top: 0;
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -1029,7 +1097,7 @@ body {
   padding-bottom: 60px;
   padding-top: 0px;
 }
-@media screen and (min-wight: 1200px) {
+@media screen and (min-width: 1200px) {
   .client {
     padding-bottom: 94px;
     padding-top: 94px;
@@ -1040,7 +1108,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100% - 210px) / 6);
+  /*flex-basis: calc((100% - 210px) / 6);*/
 }
 .company__icon {
   fill: #afb1b8;
@@ -1051,17 +1119,22 @@ body {
   text-align: center;
   justify-content: center;
 }
+@media screen and (min-width: 328px) and (max-width: 767px) {
+  .company {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 768px) {
   .company {
     justify-content: center;
-    flex-basis: calc((100% - 210px) / 4);
+    flex-basis: calc((100% - 30px) / 4);
   }
 }
 @media screen and (min-width: 1200px) {
   .company {
     display: flex;
     flex-wrap: nowrap;
-    flex-basis: calc((100% - 250px) / 6);
+    flex-basis: calc((100% - 30px) / 6);
     max-height: 92px;
   }
 }
@@ -1088,12 +1161,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .company__list-item {
-    max-width: 226px;
+    min-width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
   .company__list-item {
-    max-width: 170px;
+    min-width: 170px;
   }
 }
 
@@ -1311,7 +1384,8 @@ body {
 @media screen and (min-width: 1200px) {
   .address-list {
     text-align: start;
-    margin-right: 30px;
+    margin-right: 0px;
+    margin-left: 0;
   }
 }
 
@@ -1360,23 +1434,21 @@ body {
 @media screen and (max-width: 768px) {
   .bottom__address {
     margin-bottom: 60px;
-    margin-right: 124px;
-    margin-left: 124px;
     min-width: 232px;
   }
 }
 @media screen and (min-width: 768px) {
   .bottom__address {
-    display: flex;
     align-items: baseline;
     margin-left: 76px;
   }
 }
 @media screen and (min-width: 1200px) {
   .bottom__address {
-    display: flex;
+    display: block;
     align-items: baseline;
-    margin-right: 70px;
+    margin-right: 94px;
+    margin-left: 0;
   }
 }
 
@@ -1385,7 +1457,7 @@ body {
     margin-bottom: 60px;
     margin-right: 0px;
     margin-left: 76px;
-    min-width: auot;
+    min-width: auto;
   }
 }
 .footer .logo {
@@ -1413,7 +1485,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer .logo {
-    margin-left: 75px;
+    margin-left: 0px;
   }
 }
 
@@ -1440,7 +1512,7 @@ body {
   .icon-footer {
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-right: 60px;
+    margin-right: 94px;
   }
 }
 
@@ -1497,6 +1569,7 @@ body {
 /*Форма відправки*/
 .forma {
   text-align: center;
+  max-height: 156px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .forma {
@@ -1507,6 +1580,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .forma {
+    max-height: 86px;
     width: 570px;
     /*margin-left: 93px;*/
   }
@@ -1514,18 +1588,29 @@ body {
 
 @media screen and (min-width: 1200px) {
   .form-send {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
+  }
+}
+
+.form-forma {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .form-forma {
+    display: flex;
+    margin-top: 20px;
   }
 }
 
 .forma__buttonmail {
   display: inline-flex;
   justify-content: center;
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   padding-top: 10px;
   padding-left: 28px;
+  padding-right: 28px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1556,6 +1641,10 @@ body {
 @media screen and (min-width: 1200px) {
   .form-send input {
     max-width: 358px;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 12px;
   }
 }
 
@@ -1889,7 +1978,8 @@ modal__icon-checkbox {
   color: #2196f3;
 }
 
-/*.menu-container {
+/*
+.menu-container {
   position: fixed;
   top: 0%;
   left: 0;
@@ -1904,7 +1994,8 @@ modal__icon-checkbox {
 
 .menu-container.is-open{
   transform: translateX(0);
-}*/
+}}
+*/
 @media screen and (max-width: 767px) {
   .menu-container {
     background-color: #ffffff;
@@ -1912,7 +2003,7 @@ modal__icon-checkbox {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 100vw; /* було 100%*/
     padding: 0px;
     max-width: auto;
   }
