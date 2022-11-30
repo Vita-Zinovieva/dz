@@ -46,12 +46,13 @@
 
 
 .address-list {
-  /*max-width: 232px;*/
+  /*max-width: 232px;
+   justify-content: center;*/
   text-align: center;
-  justify-content: center;
+ 
   
   @media screen and (min-width: 768px) { 
-    margin-left: 76px;
+   
   }
     
   @media screen and(min-width: 1200px) {
@@ -155,11 +156,11 @@
   justify-content: center;
 
   @media screen and (min-width: 768px){
-    justify-content: flex-start;
-    margin-left: 115px;
+    margin-left: 39px;
     max-width: 154px;
     margin-bottom: 28px;
     margin-top: 0px;
+    margin-right: 0px;
    
   }
 
@@ -195,17 +196,28 @@
   }
 }
   
-.icon-footer__tit,
-.forma__footer-tit {
+.icon-footer__tit {
   margin-bottom: 0px;
   height: 16px;
   text-align: center;
-
-  @media screen and (min-width: 1200px)  {
+  @media screen and (min-width: 1200px) {
     text-align: left;
     margin-bottom: 0px;
   }
 }
+
+
+.forma__footer-tit {
+  margin-bottom: 0px;
+  height: 16px;
+  
+
+ @media screen and (min-width: 1200px) {
+        margin-right: 336px;
+    
+    }
+  }
+
   
 .social-icon {
   display: flex;

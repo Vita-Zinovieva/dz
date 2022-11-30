@@ -161,12 +161,12 @@
   transition: background-color box-shadow $cubic-bezier;
 
   @media screen and(min-width: 480px) and (max-width: 767px){
-    max-width: 200px;
+  width: 200px;
   height: 50px; 
   } 
   
   @media screen and(min-width: 1200px){
-    max-width: 216px;
+   width: 200px;
    height: 50px; 
    }
   

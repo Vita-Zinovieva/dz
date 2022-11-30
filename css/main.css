@@ -94,6 +94,8 @@ body {
   text-decoration: none;
   font-size: 26px;
   line-height: 1.15;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 480px) {
   .logo {
@@ -105,10 +107,11 @@ body {
   .logo {
     font-size: 24px;
     line-height: 1.17;
-    margin-right: 88px;
     margin-top: 26px;
     margin-bottom: 26px;
-    margin-left: 15px;
+    margin-right: 88px;
+    /*margin-left: 15px;
+    */
   }
 }
 @media screen and (min-width: 1200px) {
@@ -626,13 +629,13 @@ body {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .hero__button-primery {
-    max-width: 200px;
+    width: 200px;
     height: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__button-primery {
-    max-width: 216px;
+    width: 200px;
     height: 50px;
   }
 }
@@ -1376,14 +1379,9 @@ body {
 }
 
 .address-list {
-  /*max-width: 232px;*/
+  /*max-width: 232px;
+   justify-content: center;*/
   text-align: center;
-  justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .address-list {
-    margin-left: 76px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .address-list {
@@ -1480,11 +1478,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer .logo {
-    justify-content: flex-start;
-    margin-left: 115px;
+    margin-left: 39px;
     max-width: 154px;
     margin-bottom: 28px;
     margin-top: 0px;
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1520,17 +1518,25 @@ body {
   }
 }
 
-.icon-footer__tit,
-.forma__footer-tit {
+.icon-footer__tit {
   margin-bottom: 0px;
   height: 16px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
-  .icon-footer__tit,
-.forma__footer-tit {
+  .icon-footer__tit {
     text-align: left;
     margin-bottom: 0px;
+  }
+}
+
+.forma__footer-tit {
+  margin-bottom: 0px;
+  height: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .forma__footer-tit {
+    margin-right: 336px;
   }
 }
 
@@ -1650,8 +1656,7 @@ body {
 }
 @media screen and (min-width: 1191px) {
   .form-send input {
-    max-width: 358px;
-    width: 100%;
+    width: 358px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-right: 12px;
