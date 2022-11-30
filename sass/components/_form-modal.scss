@@ -5,7 +5,7 @@
   max-height: 156px;
   
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px)  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +14,7 @@
   @media screen and (min-width: 1200px) {
     max-height: 86px;
     max-width: 570px;
+    width: 100%;
     /*margin-left: 93px;*/
   }
 }
@@ -65,16 +66,16 @@
   transition: border-color $cubic-bezier;
   color: $secodary-button-color;
 
-  @media screen and (min-width: 320px)and (max-width: 1190px) {
+  @media screen and (min-width: 320px) {
     max-width: 450px;
     margin-top: 20px;
     margin-bottom: 20px;
-
+    width: 100%;
   }
   
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1191px) {
     max-width: 358px;
-    display: flex;
+    width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-right: 12px;
@@ -110,6 +111,7 @@
 
   @media screen and (min-width: 1200px) {
     height: 528px;
+    z-index: 999;
   }
 }
 .is-hidden {
@@ -131,7 +133,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 450px;
+  max-width: 528px;
+  width: 100%;
   min-height: 609px;
   background-color: $primery-background-color;
   /* justify-content: center;
@@ -141,7 +144,6 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    max-width: 528px;
     max-height: 581px;
   }
 
@@ -179,15 +181,11 @@
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-  max-width: 370px;
+  max-width: 448px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  
-
-  @media screen and (min-width: 1200px) {
-    max-width: 448px;
   }
-}
   
 .modal__button-form {
   width: 200px;
@@ -230,6 +228,8 @@
   border-radius: 4px;
   border-color: rgba(33, 33, 33, 0.2);
   height: 40px;
+  max-width: 448px;
+  width: 100%;
 }
 
 .modal__input-form:focus,
